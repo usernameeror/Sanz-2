@@ -185,8 +185,7 @@ def menu():
     elif asw == "6":
     	pencarian()
     elif asw == "7":
-    	emailfb()
-        sandimanual()
+    	return gantiua()
     elif asw == "8":
     	infotambahan()
     elif asw == "0":
@@ -207,14 +206,12 @@ def infotambahan():
 	if fall == "":
 		menu()
         elif fall == "1":
-            return gantiua()()
-        elif fall == "2":
 		cekopsi()
-	elif fall == "3":
+	elif fall == "2":
 		cekhasil()
-	elif fall == "4":
+	elif fall == "3":
 		laporbug()
-	elif fall == "5":
+	elif fall == "4":
 		menu()
 	else:
 		menu()
