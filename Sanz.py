@@ -311,18 +311,9 @@ def fbbaru():
 	
 ### DUMP ID RANDOM OLD ###
 def fbtua():
-	x = 111111111
-	xx = 999999999
-	idx = "100000" 
-	limit = int(input(" [+] masukan jumlah id (cth 5000): "))
-	try:
-		for n in range(limit):
-			_ = random.randint(x,xx)
-			__ = idx
-			self.id.append(__+str(_))
-	except KeyError:
-		exit(" [!] akun tidak tersedia atau error")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
+	jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
+    raw_input('\n [*] kembali ')
+    menu()
 	
 ### DUMP ID RANDOM EMAIL ###
 def emailfb():
