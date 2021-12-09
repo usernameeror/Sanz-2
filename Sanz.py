@@ -207,9 +207,9 @@ def infotambahan():
 	if fall == "":
 		menu()
         elif fall == "1":
-		cekhasil()
-	elif fall == "2":
 		cek_hasil()
+	elif fall == "2":
+		cekhasil()
 	elif fall == "3":
 		laporbug()
 	elif fall == "4":
