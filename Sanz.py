@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 # coding=utf-8
-# author : Fall Xavier
+# author : BINTANG-XD
 
 ### IMPORT MODULE ###
 import os, sys, re, time, requests, calendar, random,json
@@ -308,7 +308,7 @@ def fbbaru():
 		exit(" [!] akun tidak tersedia atau error")
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 	
-### DUMP ID RANDOM OLD ###
+### DUMP PENCARIAN NAMA ###
 def pencarian():
     jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
     raw_input('\n [*] kembali ')
