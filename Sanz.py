@@ -147,8 +147,10 @@ def menu():
         exit(" %s[!] anda tidak terhubung ke internet!"%(M))
 
     logo()
-    print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor    \x1b[1;93m: \x1b[1;93mBINTANG-XD"%(N))
-    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mGithub    : https://github.com/bot-85")
+    print ''
+    print ' \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor      : \x1b[1;92mBINTANG-XD'
+    print ' \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mVersion     : \x1b[1;92m5.3'
+    print ' \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mYouTube     : \x1b[1;92mBINTANG XD'
     print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m--------------------------------------------")
     print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mBergabung \x1b[1;93m: %s"%(tgl))
     print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;92mPremium Sampai Kiamat%s"%(H,N))
