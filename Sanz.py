@@ -391,9 +391,9 @@ def cekhasil():
 
 ####GANTI USER AGENT####
 def useragent():
-	print ("\n%s%s%s 01 %sGanti user agent "%(U,til,P,O))
-	print ("%s%s%s 02 %sCek user agent "%(U,til,P,O))
-	print ("%s%s%s 00 %sKembali "%(U,til,M,O))
+	print ("\n 01 %sGanti user agent "%(U,til,P,O))
+	print (" 02 %sCek user agent "%(U,til,P,O))
+	print (" 00 %sKembali "%(U,til,M,O))
 	_romz_ = raw_input('\n%s#%s Pilih%s >%s '%(P,O,M,K))
 	uas(_romz_)
 	
