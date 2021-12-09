@@ -161,7 +161,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m04\x1b[1;92m] \x1b[1;93mCrack ID Postingan")
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m] \x1b[1;93mCrack ID FB New")
     print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mCrack Dari Pencarian Nama")
-    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mCrack Random Email")
+    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings User Agent")
     print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mIngfo Tambahan")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m \x1b[1;91mHapus Token"%(M,N))
     asw = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
@@ -197,7 +197,6 @@ def menu():
     	menu() 
 ### INFORMASI TAMBAHAN ###
 def infotambahan():
-        print("\n \x1b[1;92m[\x1b[1;93m1\x1b[1;92m] \x1b[1;93mSettings User Agent")
 	print(" \x1b[1;92m[\x1b[1;93m2\x1b[1;92m] \x1b[1;93mCheck Opsi CheckPoint")
 	print(" \x1b[1;92m[\x1b[1;93m3\x1b[1;92m] \x1b[1;93mCheck Hasil Crack")
 	print(" \x1b[1;92m[\x1b[1;93m4\x1b[1;92m] \x1b[1;93mLaporkan Bug Script")
