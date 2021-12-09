@@ -396,7 +396,30 @@ def cekhasil():
 		menu()
 	else:
 		menu()
-	
+
+
+#### SETINGS USER AGENT
+def gantiua():
+    os.system('rm -rf ugent.txt')
+    ua = raw_input('\n \x1b[1;93m[?] masukan user agent kamu : \x1b[1;93m')
+    try:
+        ugent = open('ugent.txt', 'w')
+        ugent.write(ua)
+        ugent.close()
+        jalan('\n \x1b[1;93m[*] sukses mengganti user agent')
+        print '\n \x1b[1;93m[*] user agent kamu : \x1b[1;92m' + ua
+        pler = raw_input('\n \x1b[1;97m\x1b[1;93m[?] apakah ingin mengganti user agent? (Y/t): \x1b[1;92m')
+        if pler == '':
+            menu()
+        elif pler == 'Y' or pler == 'y':
+            gantiua()
+        elif pler == 'T' or pler == 't':
+            menu()
+    except (KeyError, IOError):
+        jalan('\n [*] gagal mengganti user agent')
+        raw_input('\n [*] kembali')
+        menu()
+
 ####CEK OPSI HASIL CRACK####
 def cekopsi():
 	dirs = os.listdir("CP")
