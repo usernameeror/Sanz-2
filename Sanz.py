@@ -506,12 +506,12 @@ def check_in(user, pasw):
 
 ### LAPOR BUG SCRIPT ###
 def laporbug():
-	asulo = input("\n [?] masukan laporan bug script : ").replace(' ','%20')
-	if asulo == "":
-		menu()
-	os.system('xdg-open https://wa.me/6282329761867?text=' +asulo)
-	input("\n [*] tekan enter untuk kembali ke menu")
-	menu()
+    asulo = raw_input('\n \x1b[1;92m[?] masukan laporan bug script : \x1b[1;92m').replace(' ', '%20')
+    if asulo == '':
+        menu()
+    os.system('xdg-open https://wa.me/6281272106675?text=' + asulo)
+    raw_input('\n \x1b[1;92m[*] \x1b[1;93mkembali ')
+    menu()
 ### BAGIAN SANDI ####
 def atursandi():
 	ask=raw_input(" \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mapakah anda ingin menggunakan sandi manual\x1b[1;97m? \x1b[1;92m[\x1b[1;93mY\x1b[1;97m/\x1b[1;93mt\x1b[1;92m]\x1b[1;93m:\x1b[1;92m")
