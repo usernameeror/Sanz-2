@@ -180,7 +180,7 @@ def menu():
     	postingan()
     	atursandi()
     elif asw == "5":
-    	fbbaru()
+    	useragent()
         sandimanual()
     elif asw == "6":
     	pencarian()
@@ -389,7 +389,7 @@ def cekhasil():
 		menu()
 
 
-# GANTI USER AGENT
+####GANTI USER AGENT####
 def useragent():
 	print ("\n%s%s%s 01 %sGanti user agent "%(U,til,P,O))
 	print ("%s%s%s 02 %sCek user agent "%(U,til,P,O))
@@ -427,6 +427,8 @@ def uas(_romz_):
     	menu()
     else:
         print ('%s%s isi yang benar'%(M,til));jeda(2);uas(_romz_)
+
+
 ####CEK OPSI HASIL CRACK####
 def cekopsi():
 	dirs = os.listdir("CP")
