@@ -610,7 +610,7 @@ def sandiotomatis():
 def api(uid, pwx):
 	global ok, cp, loop, token
 	sys.stdout.write(
-		"\r %s[*] [crack] %s/%s OK:-%s - CP:-%s "%(N,loop, len(id), len(ok), len(cp))
+		"\r %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;92m[\x1b[1;93mcrack\x1b[1;92m] %s/%s \x1b[1;92mOK:-%s - \x1b[1;93mCP:-%s "%(N,loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	for pw in pwx:
 		pw = pw.lower()
