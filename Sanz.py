@@ -206,16 +206,15 @@ def infotambahan():
 	fall = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
 	if fall == "":
 		menu()
-	elif fall == "1":
-        elif fall == "2":
+        elif fall == "1":
             return gantiua()
-        elif fall == "3":
+        elif fall == "2":
 		cekopsi()
-	elif fall == "4":
+	elif fall == "3":
 		cekhasil()
-	elif fall == "5":
-		laporbug()
 	elif fall == "4":
+		laporbug()
+	elif fall == "5":
 		menu()
 	else:
 		menu()
