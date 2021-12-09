@@ -207,7 +207,7 @@ def infotambahan():
 	if fall == "":
 		menu()
         elif fall == "1":
-            return gantiua()
+            useragent()
         elif fall == "2":
 		cekopsi()
 	elif fall == "3":
@@ -389,28 +389,44 @@ def cekhasil():
 		menu()
 
 
-#### SETINGS USER AGENT
-def gantiua():
-    os.system('rm -rf ugent.txt')
-    ua = raw_input('\n \x1b[1;93m[?] masukan user agent kamu : \x1b[1;93m')
-    try:
-        ugent = open('ugent.txt', 'w')
-        ugent.write(ua)
-        ugent.close()
-        jalan('\n \x1b[1;93m[*] sukses mengganti user agent')
-        print '\n \x1b[1;93m[*] user agent kamu : \x1b[1;92m' + ua
-        pler = raw_input('\n \x1b[1;97m\x1b[1;93m[?] apakah ingin mengganti user agent? (Y/t): \x1b[1;92m')
-        if pler == '':
-            menu()
-        elif pler == 'Y' or pler == 'y':
-            gantiua()
-        elif pler == 'T' or pler == 't':
-            menu()
-    except (KeyError, IOError):
-        jalan('\n [*] gagal mengganti user agent')
-        raw_input('\n [*] kembali')
-        menu()
-
+# GANTI USER AGENT
+def useragent():
+	print ("\n%s%s%s 01 %sGanti user agent "%(U,til,P,O))
+	print ("%s%s%s 02 %sCek user agent "%(U,til,P,O))
+	print ("%s%s%s 00 %sKembali "%(U,til,M,O))
+	_romz_ = raw_input('\n%s#%s Pilih%s >%s '%(P,O,M,K))
+	uas(_romz_)
+	
+def uas(_romz_):
+    if _romz_ == '':
+        print '%s%s isi yang benar'%(M,til);jeda(2);uas(_romz_)
+    elif _romz_ in("1","01"):
+    	print ("%s%s%s Ketik %sMy user agent%s di browser google chrome\n%s%s%s untuk gunakan user agent anda sendiri"%(U,til,O,H,O,U,til,O))
+    	print ("%s%s%s Ketik %sCancel%s untuk gunakan user agent bawaan tools"%(U,til,O,H,O))
+    	try:
+    	    ua = raw_input("%s%s%s Enter user agent %s: %s"%(U,til,O,M,K))
+            if ua in(""):
+            	print ("%s%s isi yang benar "%(M,til));jeda(2);menu()
+            elif ua in("my user agent","My User Agent","MY USER AGENT","My user agent"):
+            	jalan("%s%s%s Anda akan di arahkan ke browser "%(U,til,O));jeda(2)
+            	os.system("am start https://www.google.com/search?q=My+user+agent>/dev/null");jeda(2);useragent(romz)
+            elif ua in("CANCEL","Cancel","cancel"):
+            	ua_ = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
+                open("data/ua.txt","w").write(ua_);jeda(2)
+                print ("\n%s%s menggunakan user agent bawaan "%(H,til));jeda(2);menu()
+            open("data/ua.txt","w").write(ua);jeda(2)
+            print ("\n%s%s berhasil mengganti user agent"%(H,til));jeda(2);menu()
+        except KeyboardInterrupt:
+			exit ("\x1b[1;91m• Error ") 
+    elif _romz_ in("2","02"):
+        try:
+        	ua_ = open('data/ua.txt', 'r').read();jeda(2);print ("%s%s%s user agent anda : %s%s"%(U,til,O,H,ua_));jeda(2);raw_input('\n%s%s%s [%s Enter%s ] '%(U,til,O,U,O));menu()
+        except IOError:
+        	ua_ = '%s-'%(M)
+    elif _romz_ in("0","00"):
+    	menu()
+    else:
+        print ('%s%s isi yang benar'%(M,til));jeda(2);uas(_romz_)
 ####CEK OPSI HASIL CRACK####
 def cekopsi():
 	dirs = os.listdir("CP")
