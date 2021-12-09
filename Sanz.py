@@ -310,9 +310,6 @@ def fbbaru():
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP ID RANDOM OLD ###
-def pencarian():
-	jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
-    menu()
 	
 ### DUMP ID RANDOM EMAIL ###
 def emailfb():
