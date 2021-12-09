@@ -402,10 +402,7 @@ def gantiua():
         pler = raw_input('\n \x1b[1;97m\x1b[1;93m[?] apakah ingin mengganti user agent? (Y/t): \x1b[1;92m')
         if pler == '':
             menu()
-        elif pler == 'Y' or pler == 'y':
-            gantiua()
-        elif pler == 'T' or pler == 't':
-            menu()
+
     except (KeyError, IOError):
         jalan('\n [*] gagal mengganti user agent')
         raw_input('\n [*] kembali')
