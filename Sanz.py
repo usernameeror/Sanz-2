@@ -399,7 +399,7 @@ def gantiua():
         ugent.close()
         jalan('\n \x1b[1;93m[*] sukses mengganti user agent')
         print '\n \x1b[1;93m[*] user agent kamu : \x1b[1;92m' + ua
-        pler = raw_input('\n \x1b[1;97m\x1b[1;93m[?] apakah ingin mengganti user agent? (Y/t): \x1b[1;92m')
+        pler = raw_input('\n \x1b[1;97m\x1b[1;93m[*] [kembali]
         if pler == '':
             menu()
 
