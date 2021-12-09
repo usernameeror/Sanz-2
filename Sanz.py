@@ -160,7 +160,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m03\x1b[1;92m]. \x1b[1;93mcrack dari followers")
     print(" \x1b[1;92m[\x1b[1;93m04\x1b[1;92m]. \x1b[1;93mcrack dari postingan")
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m]. \x1b[1;93mcrack random fb new")
-    print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m]. \x1b[1;93mcrack random fb old")
+    print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m]. \x1b[1;93mcrack pencarian nama")
     print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m]. \x1b[1;93mcrack random email fb")
     print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m]. \x1b[1;93minformasi tambahan")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m. \x1b[1;93mlogout \x1b[1;93m(\x1b[1;97mhapus token\x1b[1;93m)"%(M,N))
@@ -183,8 +183,7 @@ def menu():
     	fbbaru()
         sandimanual()
     elif asw == "6":
-    	fbtua()
-        sandimanual()
+    	pencarian()
     elif asw == "7":
     	emailfb()
         sandimanual()
@@ -310,6 +309,10 @@ def fbbaru():
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP ID RANDOM OLD ###
+def pencarian():
+    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
+    raw_input('\n [*] kembali ')
+    menu()
 	
 ### DUMP ID RANDOM EMAIL ###
 def emailfb():
