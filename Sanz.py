@@ -312,7 +312,7 @@ def fbbaru():
 ### DUMP ID RANDOM OLD ###
 def pencarian():
 	jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
-    raw_input('\n [*] kembali "
+    raw_input('\n [*] kembali 
     menu()
 	
 ### DUMP ID RANDOM EMAIL ###
