@@ -200,7 +200,7 @@ def menu():
 ### INFORMASI TAMBAHAN ###
 def infotambahan():
         print("\n \x1b[1;92m[\x1b[1;93m1\x1b[1;92m] \x1b[1;93mSetings user agent")
-	print("\n \x1b[1;92m[\x1b[1;93m2\x1b[1;92m] \x1b[1;93mcek opsi hasil crack")
+	print(" \x1b[1;92m[\x1b[1;93m2\x1b[1;92m] \x1b[1;93mcek opsi hasil crack")
 	print(" \x1b[1;92m[\x1b[1;93m3\x1b[1;92m] \x1b[1;93mlihat akun hasil crack")
 	print(" \x1b[1;92m[\x1b[1;93m4\x1b[1;92m] \x1b[1;93mlaporkan bug script")
 	print(" \x1b[1;92m[\x1b[1;93m5\x1b[1;92m] \x1b[1;93mkembali ke menu")
