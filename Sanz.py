@@ -207,10 +207,13 @@ def infotambahan():
 	if fall == "":
 		menu()
 	elif fall == "1":
+        elif fall == "2":
+            return gantiua()
+        elif fall == "3":
 		cekopsi()
-	elif fall == "2":
+	elif fall == "4":
 		cekhasil()
-	elif fall == "3":
+	elif fall == "5":
 		laporbug()
 	elif fall == "4":
 		menu()
