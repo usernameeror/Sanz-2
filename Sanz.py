@@ -310,7 +310,7 @@ def fbbaru():
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP ID RANDOM OLD ###
-def fbtua():
+def pencarian():
 	jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
     raw_input('\n [*] kembali ')
     menu()
