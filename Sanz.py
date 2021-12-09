@@ -207,7 +207,7 @@ def infotambahan():
 	if fall == "":
 		menu()
         elif fall == "1":
-            useragent()
+            return gantiua()()
         elif fall == "2":
 		cekopsi()
 	elif fall == "3":
