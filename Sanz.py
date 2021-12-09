@@ -209,7 +209,7 @@ def infotambahan():
         elif fall == "1":
 		cekhasil()
 	elif fall == "2":
-		cekhasil()
+		cek_hasil()
 	elif fall == "3":
 		laporbug()
 	elif fall == "4":
