@@ -190,11 +190,11 @@ def menu():
     	pencarian()
     elif asw == "7":
     	return gantiua()
-    elif fall == "8":
+    elif asw == "8":
 	cekopsi()
-    elif fall == "9":
+    elif asw == "9":
 	cekhasil()
-    elif fall == "10":
+    elif asw == "10":
  	laporbug()
     elif asw == "0":
     	os.system('rm -f token.txt')
