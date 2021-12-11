@@ -185,6 +185,7 @@ def menu():
     	atursandi()
     elif asw == "5":
     	group()
+        self.manual()
     elif asw == "6":
     	pencarian()
     elif asw == "7":
