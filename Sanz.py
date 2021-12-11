@@ -184,8 +184,7 @@ def menu():
     	postingan()
     	atursandi()
     elif asw == "5":
-    	fbbaru()
-        sandimanual()
+    	group(__romz__())
     elif asw == "6":
     	pencarian()
     elif asw == "7":
@@ -278,7 +277,7 @@ def postingan():
 		exit(" [!] postingan tidak tersedia atau post private")
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 	
-### DUMP ID RANDOM NEW ###
+### DUMP ID GROUP###
 class group:
 	
 	def __init__(self, cookies):
