@@ -163,7 +163,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m04\x1b[1;92m] \x1b[1;93mCrack ID Postingan")
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m] \x1b[1;93mCrack ID FB New")
     print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mCrack Dari Pencarian Nama")
-    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings User Agent")
+    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings User Agent \x1b[1;92mU\x1b[1;97m/\x1b[1;93mA")
     print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck Opsi CheckPoint")
     print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mCheck Hasil Crack")
     print(" \x1b[1;92m[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mLaporkan Bug Script")
