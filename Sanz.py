@@ -148,15 +148,15 @@ def menu():
 
     logo()
     print ''
-    print ' \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor      : \x1b[1;92mBINTANG-XD'
-    print ' \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mVersion     : \x1b[1;92m5.3'
-    print ' \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mYouTube     : \x1b[1;92mBINTANG XD'
-    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m--------------------------------------------")
-    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mBergabung \x1b[1;93m: %s"%(tgl))
-    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;92mPremium Sampai Kiamat%s"%(H,N))
-    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m--------------------------------------------")
-    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mIP        \x1b[1;93m: %s"%(IP))
-    print("\n \x1b[1;92m[ \x1b[1;92mselamat datang %s%s%s \x1b[1;93m]\n"%(K,nama,N))
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor      : \x1b[1;92mBINTANG-XD'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion     : \x1b[1;92m5.3'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mYouTube     : \x1b[1;92mBINTANG XD'
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mBergabung \x1b[1;93m: %s"%(tgl))
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;92mPremium Sampai Kiamat%s"%(H,N))
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mIP        \x1b[1;93m: %s"%(IP))
+    print("\n \x1b[1;92m[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
     print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mCrack ID Teman Publik")
     print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mCrack ID Teman Massal")
     print(" \x1b[1;92m[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mCrack ID Followers")
@@ -399,7 +399,7 @@ def yo_ndak_tau_ko_tanya_saia():
     if _asu_ == '':
         print '\n %s[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
     elif _asu_ in['Y','y']:
-        jalan('\n %s *%s M\x1b[1;93masuk Google chrome/google biasa lalu cari\n  %s*%s  %sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
+        jalan('\n %s •%s \x1b[1;93mMasuk Google chrome/google biasa lalu cari\n  %s•%s %sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
         _agen_ = raw_input(' [%s?%s]\x1b[1;93m masukan user agent hp anda :%s\x1b[1;93m '%(O,N,H))
         open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
         jalan('\n %s[%s✓%s] \x1b[1;92mberhasil menggunakan user agent hp anda...'%(N,H,N))
