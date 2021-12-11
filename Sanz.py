@@ -184,7 +184,7 @@ def menu():
     	postingan()
     	atursandi()
     elif asw == "5":
-    	group
+    	group()
     elif asw == "6":
     	pencarian()
     elif asw == "7":
