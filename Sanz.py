@@ -279,20 +279,69 @@ def postingan():
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP ID RANDOM NEW ###
-def fbbaru():
-	x = 11111111111
-	xx = 77777777777
-	idx = "1000" 
-	limit = int(input(" [+] masukan jumlah id (cth 5000): "))
-	try:
-		for n in range(limit):
-			_ = random.randint(x,xx)
-			__ = idx
-			id.append(__+"<=>"+str(_))
-	except KeyError:
-		exit(" [!] akun tidak tersedia atau error")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
+class group:
 	
+	def __init__(self, cookies):
+		self.glist=[]
+		self.cookies=cookies
+		self.manual();exit()
+	def manual(self):
+		print("\n%s%s%s Perlu di ingat group harus bersifat publik atau wajib join group"%(U,til,O))
+		id=raw_input("%s%s%s Id groups%s > %s"%(U,til,O,M,K))
+		if id in(""):
+			self.manual()
+		else:
+			_r_=bs4.BeautifulSoup(requests.get("https://mbasic.facebook.com/groups/"+id,headers=hdcok(),cookies=self.cookies).text,"html.parser")
+			if "konten tidak" in _r_.find("title").text.lower():
+				exit("%s%s input id grup yg valid goblok, id error, atau lu belom jooin di grup"%(M,til))
+			else:
+				self.listed={"id":id,"name":_r_.find("title").text}
+				self.fuck_you()
+				print("%s%s%s Nama grup%s > %s%s.."%(U,til,O,M,H,self.listed.get("name")[0:20]))
+				self.dumps("https://mbasic.facebook.com/groups/"+id)
+	def fuck_you(self):
+		self.fl=raw_input('%s%s%s Nama file %s> %s'%(U,til,O,M,K)).replace(" ","_")
+		if self.fl=='':self.fuck_you()
+		open(self.fl,"w").close()
+	def dumps(self, url):
+		_r_=bs4.BeautifulSoup(requests.get(url,cookies=self.cookies,headers=hdcok()).text,"html.parser")
+		print("\r%s%s%s mengumpulkan id %s> %s%s \x1b[1;97m- mohon tunggu\r"%(U,til,O,M,H,str(len(open(self.fl).read().splitlines()))))
+		sys.stdout.flush();jeda(0.0050)
+		for _i_ in _r_.find_all("h3"):
+			try:
+				if len(bs4.re.findall("\/",_i_.find("a",href=True).get("href")))==1:
+					ogeh=_i_.find("a",href=True)
+					if "profile.php" in ogeh.get("href"):
+						_a_="".join(bs4.re.findall("profile\.php\?id=(.*?)&",ogeh.get("href")))
+						if len(_a_)==0:continue
+						elif _a_ in open(self.fl).read():
+							continue
+						else:
+							open(self.fl,"a+").write("%s<=>%s\n"%(_a_,ogeh.text))
+							continue
+					else:
+						_a_="".join(bs4.re.findall("/(.*?)\?",ogeh.get("href")))
+						if len(_a_)==0:continue
+						elif _a_ in open(self.fl).read():
+							continue
+						else:
+							open(self.fl,"a+").write("%s<=>%s\n"%(_a_,ogeh.text))
+			except:continue
+		for _i_ in _r_.find_all("a",href=True):
+			if "Lihat Postingan Lainnya" in _i_.text:
+				while True:
+					try:
+						self.dumps("https://mbasic.facebook.com/"+_i_.get("href"))
+						break
+					except Exception as e:
+						print("\r\x1b[1;91m•%s, retrying..."%e);continue
+		print ('\n\n%s%s Succes dump id member group '%(H,til));print ('%s%s%s File dump tersimpan %s>%s %s '%(U,til,O,M,H,self.fl));raw_input('\n%s%s%s [%s Enter%s ] '%(U,til,O,U,O));menu()
+def cek(arg):
+	if os.path.exists("data/cookies"):
+		if os.path.getsize("data/cookies") !=0:
+			return True
+		else:return False
+	else:return False
 ### DUMP PENCARIAN NAMA ###
 def pencarian():
     jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
