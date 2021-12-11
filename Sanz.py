@@ -189,7 +189,7 @@ def menu():
     elif asw == "6":
     	pencarian()
     elif asw == "7":
-    	return gantiua()
+    	seting_yntkts()
     elif asw == "8":
 	cekopsi()
     elif asw == "9":
@@ -374,24 +374,43 @@ def cekhasil():
 		menu()
 
 
-####GANTI USER AGENT####
-def gantiua():
-    os.system('rm -rf ugent.txt')
-    ua = raw_input('\n \x1b[1;93m[?] masukan user agent kamu : \x1b[1;93m')
-    try:
-        ugent = open('ugent.txt', 'w')
-        ugent.write(ua)
-        ugent.close()
-        jalan('\n \x1b[1;93m[*] sukses mengganti user agent')
-        print '\n \x1b[1;93m[*] user agent kamu : \x1b[1;92m' + ua
-        pler = raw_input('\n \x1b[1;97m\x1b[1;93m[*] [kembali] ')
-        if pler == '':
-            menu()
-
-    except (KeyError, IOError):
-        jalan('\n [*] gagal mengganti user agent')
-        raw_input('\n [*] kembali')
-        menu()
+###GANTI USER AGENT###
+def seting_yntkts():
+    print '\n %s1%s \x1b[1;93mganti user agent'%(O,N)
+    print ' %s2%s \x1b[1;93mcheck user agent'%(O,N)
+    ytbjts = raw_input('\n %s\x1b[1;93m[%s\x1b[1;92m?%s\x1b[1;92m] choose : \x1b[1;93m'%(N,O,N))
+    if ytbjts == '':
+        print '\n %s[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);time.sleep(2);seting_yntkts()
+    elif ytbjts in['1','01']:
+        yo_ndak_tau_ko_tanya_saia()
+    elif ytbjts in['2','02']:
+        try:
+            user_agent = open('YNTKTS.txt', 'r').read()
+        except IOError:
+            user_agent = '%s-'%(M)
+        print '\n %s[%s+%s] User Agent anda : \x1b[1;93m%s%s'%(N,O,N,H,user_agent)
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
+    else:
+        print '\n %s[%s×%s] \x1b[1;93minput yang bener'%(N,M,N);time.sleep(2);seting_yntkts()
+# User Agent baru
+def yo_ndak_tau_ko_tanya_saia():
+    os.system('rm -rf YNTKTS.txt')
+    _asu_ = raw_input('\n [%s?%s] \x1b[1;93mingin menggunakan user agent hp anda [Y/t]: '%(O,N))
+    if _asu_ == '':
+        print '\n %s[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
+    elif _asu_ in['Y','y']:
+        jalan('\n %s *%s M\x1b[1;93masuk Google chrome/google biasa lalu cari\n  %s*%s  %sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
+        _agen_ = raw_input(' [%s?%s]\x1b[1;93m masukan user agent hp anda :%s\x1b[1;93m '%(O,N,H))
+        open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
+        jalan('\n %s[%s✓%s] \x1b[1;92mberhasil menggunakan user agent hp anda...'%(N,H,N))
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));menu()
+    elif _asu_ in['T','t']:
+        _agen_ = raw_input(' [%s?%s] \x1b[1;93mmasukan user agent :%s \x1b[1;93m'%(O,N,H))
+        open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
+        jalan('\n %s[%s✓%s]\x1b[1;93m berhasil mengganti user agent...'%(N,H,N))
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));menu()
+    else:
+        print '\n %s[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
 
 ####CEK OPSI HASIL CRACK####
 def cekopsi():
