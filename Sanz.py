@@ -389,7 +389,7 @@ def seting_yntkts():
         except IOError:
             user_agent = '%s-'%(M)
         print '\n %s[%s+%s] User Agent anda : \x1b[1;93m%s%s'%(N,O,N,H,user_agent)
-        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));menu()
     else:
         print '\n %s[%s×%s] \x1b[1;93minput yang bener'%(N,M,N);time.sleep(2);seting_yntkts()
 # User Agent baru
