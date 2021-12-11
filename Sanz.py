@@ -327,9 +327,9 @@ def emailfb():
 	
 ### CEK HASIL CRACK ###
 def cekhasil():
-	print('\n [1]. lihat hasil crack OK ')
-	print(' [2]. lihat hasil crack CP ')
-	anjg = raw_input('\n [?] pilih : ')
+	print('\n [1]. l\x1b[1;92mihat hasil crack OK ')
+	print(' [2]. \x1b[1;93mlihat hasil crack CP ')
+	anjg = raw_input('\n [?] pilih : \x1b[1;93m')
 	if anjg == '':
 		menu()
 	elif anjg == "1":
@@ -347,9 +347,9 @@ def cekhasil():
 		nm_file = ("%s"%(file)).replace("-", " ")
 		del_txt = nm_file.replace(".txt", "")
 		print("\n *-------------------------------------------------*")
-		print(" [+] tanggal : %s -total : %s"%(del_txt, len(totalok)))
+		print(" \x1b[1;92m[+] tanggal : \x1b[1;93m%s -total : \x1b[1;93m%s"%(del_txt, len(totalok)))
 		os.system("cat OK/%s"%(file))
-		raw_input("\n [*] tekan enter untuk kembali ke menu")
+		raw_input("\n [*]\x1b[1;93m tekan enter untuk kembali ke menu")
 		menu()
 	elif anjg == "2":
 		dirs = os.listdir("CP")
@@ -357,7 +357,7 @@ def cekhasil():
 		for file in dirs:
 			print(" [*] "+file)
 		try:
-			file = raw_input("\n [?] mau lihat hasil yang mana ?: ")
+			file = raw_input("\n [?] \x1b[1;93mmau Cek yang mana ? : \x1b[1;92m" )
 			if file == "":
 				menu()
 			totalcp = open("CP/%s"%(file)).read().splitlines()
@@ -366,9 +366,9 @@ def cekhasil():
 		nm_file = ("%s"%(file)).replace("-", " ")
 		del_txt = nm_file.replace(".txt", "")
 		print("\n *-------------------------------------------------*")
-		print(" [+] tanggal : %s -total : %s"%(del_txt, len(totalcp)))
+		print(" \x1b[1;93m[+] tanggal : \x1b[1;92m%s -total : \x1b[1;93m%s"%(del_txt, len(totalcp)))
 		os.system("cat CP/%s"%(file))
-		raw_input("\n [*] tekan enter untuk kembali ke menu ")
+		raw_input("\n [*] \x1b[1;93mtekan enter untuk kembali ke menu ")
 		menu()
 	else:
 		menu()
