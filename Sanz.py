@@ -191,7 +191,7 @@ def menu():
     elif asw == "7":
     	return gantiua()
     elif asw == "8":
-	cpdetect()
+	cekopsi()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
@@ -393,7 +393,7 @@ def gantiua():
         raw_input('\n [*] kembali')
         menu()
 
-
+####CEK OPSI####
 def cekopsi():
 	dirs = os.listdir("CP")
 	print("")
