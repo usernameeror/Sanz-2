@@ -487,7 +487,7 @@ def check_in(user, pasw):
 
 ### LAPOR BUG SCRIPT ###
 def laporbug():
-	asulo = input("\n [?] masukan laporan bug script : ").replace(' ','%20')
+	asulo = input("\n [?] masukan laporan bug script : ").replace(' ','20%')
 	if asulo == "":
 		menu()
 	os.system('xdg-open https://wa.me/6282329761867?text=' +asulo)
