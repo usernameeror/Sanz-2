@@ -185,7 +185,7 @@ def menu():
     	postingan()
     	atursandi()
     elif asw == "5":
-    	fbnew()
+    	fbbaru()
         atursandi
     elif asw == "6":
     	pencarian()
