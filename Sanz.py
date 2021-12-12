@@ -167,6 +167,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck Opsi CheckPoint \x1b[1;93m[\x1b[1;91mRUSAK\x1b[1;93m]")
     print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mCheck Hasil Crack")
     print(" \x1b[1;92m[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mLaporkan Bug Script")
+    print(" \x1b[1;92m[\x1b[1;93m11\x1b[1;92m] \x1b[1;93mInfo Tools/Script")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m \x1b[1;91mHapus Token"%(M,N))
     asw = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
     if asw == "":
@@ -195,6 +196,8 @@ def menu():
 	cekhasil()
     elif asw == "10":
  	laporbug()
+    elif asw == "11":
+        info_tools()
     elif asw == "0":
     	os.system('rm -f token.txt')
     	jalan(" \x1b[1;92m[\x1b[1;93m✓\x1b[1;92m] \x1b[1;93mberhasil menghapus token ")
@@ -354,32 +357,20 @@ def pencarian():
     raw_input('\n [*] kembali ')
     menu()
 	
-### DUMP ID RANDOM EMAIL ###
-def emailfb():
-	x = 111
-	xx = 999
-	nama = input(" [?] masukan nama (cth: angga): ")
-	nama = nama.replace(" ", "")
-	domain = input(" [?] [G]mail.com, [Y]ahoo.com, [H]otmail.com : ")
-	if domain in [""]:Main()
-	elif domain in ["G", "g"]:
-		idx = "@gmail.com"
-	elif domain in ["Y", "y"]:
-		idx = "@yahoo.com"
-	elif domain in ["H", "h"]:
-		idx = "@hotmail.com"
-	else:Main()
-	limit = int(input(" [+] masukan jumlah id (cth 5000): "))
-	try:
-		for n in range(limit):
-			_ = random.randint(x,xx)
-			__ = idx
-			___ = nama
-			self.id.append(___+str(_)+__)
-	except KeyError:
-		exit(" [!] akun tidak tersedia atau error")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
-	
+####INFO TOOLS####
+def info_tools():
+    os.system('clear')
+    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Yt       \x1b[1;93m: Bintang XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Author   \x1b[1;93m: BINTANG-XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Github   \x1b[1;93m: https://github.com/bot-85'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Facebook \x1b[1;93m: Bintang Tzy'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Link FB  \x1b[1;93m: https://www.facebook.com/bintangt.zy.92'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Ig       \x1b[1;93m: Ndak punya'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
+    raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
+
 ### CEK HASIL CRACK ###
 def cekhasil():
 	print('\n [1]. l\x1b[1;92mihat hasil crack OK ')
