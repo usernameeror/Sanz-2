@@ -80,8 +80,8 @@ def logo():
 \x1b[1;91m ___________          _____ _____________________
 \x1b[1;92m \_   _____/         /     \\______   \_   _____/
 \x1b[1;93m  |    __)  ______  /  \ /  \|    |  _/|    __)  
-\x1b[1;94m  |     \  /_____/ /    Y    \    |   \|     \   
-\x1b[1;95m  \___  /          \____|__  /______  /\___  /   
+\x1b[1;94m  |     |  /_____/ /    Y    \    |   \|     \   
+\x1b[1;95m  \___  |          \____|__  /______  /\___  /   
 \x1b[1;96m      \/                   \/       \/     \/      """%(N))
    
 ### BAGIAN LOGIN ###
@@ -164,7 +164,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m] \x1b[1;93mCrack ID FB New")
     print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mCrack Dari Pencarian Nama")
     print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings User Agent \x1b[1;92mU\x1b[1;97m/\x1b[1;93mA")
-    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck Opsi CheckPoint")
+    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck Opsi CheckPoint \x1b[1;93m[\x1b[1;91mRUSAK\x1b[1;93m]")
     print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mCheck Hasil Crack")
     print(" \x1b[1;92m[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mLaporkan Bug Script")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m \x1b[1;91mHapus Token"%(M,N))
