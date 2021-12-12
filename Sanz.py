@@ -296,78 +296,139 @@ def fbbaru():
 		exit(" [!] akun tidak tersedia atau error")
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 ### CEK DATA² TARGET ###
-def target():
-    try:token = open('token.txt','r').read()
-    except (KeyError,IOError):jalan('%s╚══[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P));menu_log()
-    idt = input("%s╠══[%s•%s] %sID Target : "%(O,P,O,P))
+def cek_ingfo(kontol):
     try:
-        zx = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token);zy = json.loads(zx.text)
-    except (KeyError,IOError):jalan('%s╚══[%s!%s] %sID Tidak Ditemukan'%(M,P,M,P));menu()
-    try:nm = zy["name"]
-    except (KeyError,IOError):nm = ("-")
-    try:nd = zy["first_name"]
-    except (KeyError,IOError):nd = ("-")
-    try:nt = zy["middle_name"]
-    except (KeyError,IOError):nt = ("-")
-    try:nb = zy["last_name"]
-    except (KeyError,IOError):nb = ("-")
-    try:ut = zy["birthday"]
-    except (KeyError,IOError):ut = ("-")
-    try:gd = zy["gender"]
-    except (KeyError,IOError):gd = ("-")
-    try:em = zy["email"]
-    except (KeyError,IOError):em = ("-")
-    try:lk = zy["link"]
-    except (KeyError,IOError):lk = ("-")
-    try:us = zy["username"]
-    except (KeyError,IOError):us = ("-")
-    try:rg = zy["religion"]
-    except (KeyError,IOError):rg = ("-")
-    try:rl = zy["relationship_status"]
-    except (KeyError,IOError):rl = ("-")
-    try:rls = zy["significant_other"]["name"]
-    except (KeyError,IOError):rls = ("-")
-    try:lc = zy["location"]["name"]
-    except (KeyError,IOError):lc = ("-")
-    try:ht = zy["hometown"]["name"]
-    except (KeyError,IOError):ht = ("-")
-    try:ab = zy["about"]
-    except (KeyError,IOError):ab = ("-")
-    try:lo = zy["locale"]
-    except (KeyError,IOError):lo = ("-")
-    jalan('%s╠══[%s•%s] %sNama : %s'%(O,P,O,P,nm))
-    jalan('%s╠══[%s•%s] %sNama Depan : %s'%(O,P,O,P,nd))
-    jalan('%s╠══[%s•%s] %sNama Tengah : %s'%(O,P,O,P,nt))
-    jalan('%s╠══[%s•%s] %sNama Belakang : %s'%(O,P,O,P,nb))
-    jalan('%s╠══[%s•%s] %sTTL : %s'%(O,P,O,P,ut))
-    jalan('%s╠══[%s•%s] %sGender : %s'%(O,P,O,P,gd))
-    jalan('%s╠══[%s•%s] %sEmail : %s'%(O,P,O,P,em))
-    jalan('%s╠══[%s•%s] %sLink : %s'%(O,P,O,P,lk))
-    jalan('%s╠══[%s•%s] %sUsername : %s'%(O,P,O,P,us))
-    jalan('%s╠══[%s•%s] %sAgama : %s'%(O,P,O,P,rg))
-    jalan('%s╠══[%s•%s] %sStatus Hubungan : %s'%(O,P,O,P,rl))
-    jalan('%s╠══[%s•%s] %sHubungan Dengan : %s'%(O,P,O,P,rls))
-    jalan('%s╠══[%s•%s] %sTempat Tinggal : %s'%(O,P,O,P,lc))
-    jalan('%s╠══[%s•%s] %sTempat Asal : %s'%(O,P,O,P,ht))
-    jalan('%s╠══[%s•%s] %sTentang : %s'%(O,P,O,P,ab))
-    jalan('%s╠══[%s•%s] %sLocale : %s'%(O,P,O,P,lo))
-    print('%s║'%(O))
-    input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
-    menu()
-	
-####INFO TOOLS####
-def info_tools():
-    os.system('clear')
-    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Yt       \x1b[1;93m: Bintang XD.'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Author   \x1b[1;93m: BINTANG-XD.'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Github   \x1b[1;93m: https://github.com/bot-85'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Facebook \x1b[1;93m: Bintang Tzy'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Link FB  \x1b[1;93m: https://www.facebook.com/bintangt.zy.92'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Ig       \x1b[1;93m: Ndak punya'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
-    raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
+        user = raw_input("\n [%s+%s] masukan id atau username : "%(O,N))
+        if user == '':
+            print "\n [%s!%s] jangan kosong bro"%(M,N);cek_ingfo(kontol)
+        url = ("https://lookup-id.com/")
+        if "facebook" in user:
+            payload = {"fburl": user, "check": "Lookup"}
+        else:
+            payload = {"fburl": "https://free.facebook.com/" + user, "check": "Lookup"}
+        halaman = requests.post(url, data = payload).text.encode("utf-8")
+        sop_ = BeautifulSoup(halaman, "html.parser")
+        email_ = sop_.find("span", id = "code")
+        idt = email_.text
+        if user == "me":
+            idt = "me"
+        x = requests.get('https://graph.facebook.com/%s?fields=name,id,birthday,first_name,middle_name,last_name,name_format,picture,short_name,gender,link,email,location,hometown,religion,relationship_status,significant_other,about,locale&access_token=%s'%(idt, kontol)).json()
+        nmaa = x['name']
+    except (KeyError, IOError):
+        nmaa = '%s-%s'%(M,N)
+    print '\n  * Ingformasi akun Facebook *';time.sleep(0.03)
+    print '\n [*] nama lengkap : %s'%(nmaa);time.sleep(0.03)
+    try:
+    	ndpn = x['first_name']
+    except (KeyError, IOError):
+    	ndpn = '%s-%s'%(M,N)
+    print ' [*] nama depan   : %s'%(ndpn);time.sleep(0.03)
+    try:
+    	nmbl = x['last_name']
+    except (KeyError, IOError):
+    	nmbl = '%s-%s'%(M,N)
+    print ' [*] nama belakang: %s'%(nmbl);time.sleep(0.03)
+    try:
+    	hwhs = x['username']
+    except (KeyError, IOError):
+    	hwhs = '%s-%s'%(M,N)
+    print ' [*] username fb  : %s'%(hwhs);time.sleep(0.03)
+    try:
+    	asu = x['id']
+    except (KeyError, IOError):
+    	asu = '%s-%s'%(M,N)
+    print ' [*] id facebook  : %s'%(asu);time.sleep(0.03)
+    print '\n  * data-data akun facebook *\n';time.sleep(0.03)
+    try:
+    	emai = x['email']
+    except (KeyError, IOError):
+    	emai = '%s-%s'%(M,N)
+    print ' [*] gmail facebook : %s'%(emai);time.sleep(0.03)
+    try:
+    	nmrr = x['mobile_phone']
+    except (KeyError, IOError):
+    	nmrr = '%s-%s'%(M,N)
+    print ' [*] nomor telepon  : %s'%(nmrr);time.sleep(0.03)
+    try:
+    	ttll = x['birthday']
+        month, day, year = ttll.split("/")
+        month = bulan_ttl[month]
+    except (KeyError, IOError):
+    	month = '%s-%s'%(M,N)
+        day = '%s-%s'%(M,N)
+        year = '%s-%s'%(M,N)
+    print ' [*] tanggal lahir  : %s %s %s '%(day,month,year);time.sleep(0.03)
+    try:
+    	jenis = x['gender'].replace("female", "Perempuan").replace("male", "Laki-laki")
+    except (KeyError, IOError):
+    	jenis = ''
+    print ' [*] jenis kelamin  : %s '%(jenis)
+    try:
+    	r = requests.get('https://graph.facebook.com/%s/friends?limit=50000&access_token=%s'%(idt, kontol))
+        z = json.loads(r.text)
+        for i in z['data']:
+            id.append(i['id'])
+    except:pass
+    print ' [*] jumblah teman  : %s'%str(len(id));time.sleep(0.03)
+    try:
+    	r = requests.get('https://graph.facebook.com/%s/subscribers?access_token=%s'%(idt, kontol))
+        z = json.loads(r.text)
+        pengikut = z['summary']['total_count']
+    except (KeyError, IOError):
+    	pengikut = '%s-%s'%(M,N)
+    print ' [*] total followers: %s'%(pengikut);time.sleep(0.03)
+    try:
+    	lins = x['link']
+    except (KeyError, IOError):
+    	lins = '%s-%s'%(M,N)
+    print ' [*] link facebook  : %s'%(lins);time.sleep(0.03)
+    try:
+    	stas = x['relationship_status']
+    except (KeyError, IOError):
+    	stas = '%s-%s'%(M,N)
+    try:
+    	dgn = '''dengan %s'''%(x['significant_other']['name'])
+    except (KeyError, IOError):
+    	dgn = '%s-%s'%(M,N)
+    except: pass
+    print ' [*] status hubungan: %s %s'%(stas,dgn);time.sleep(0.03)
+    try:
+    	bioo = x['about']
+    except (KeyError, IOError):
+    	bioo = '%s-%s'%(M,N)
+    except: pass
+    print ' [*] tentang status : %s'%(bioo);time.sleep(0.03)
+    try:
+    	dari = x['hometown']['name']
+    except (KeyError, IOError):
+    	dari = '%s-%s'%(M,N)
+    except: pass
+    print ' [*] kota asal      : %s'%(dari);time.sleep(0.03)
+    try:
+    	tigl = x['location']['name']
+    except (KeyError, IOError):
+    	tigl = '%s-%s'%(M,N)
+    except: pass
+    print ' [*] tinggal di     : %s'%(tigl);time.sleep(0.03)
+    try:
+    	tzim = x['timezone']
+    except (KeyError, IOError):
+    	tzim = '%s-%s'%(M,N)
+    except: pass
+    print ' [*] zona waktu     : %s'%(tzim);time.sleep(0.03)
+    try:
+    	jam  = x['updated_time'][11:19]
+    	uptd = x['updated_time'][:10]
+        year, month, day = uptd.split("-")
+        month = bulan_ttl[month]
+    except (KeyError, IOError):
+    	year = '%s-%s'%(M,N)
+        month = '%s-%s'%(M,N)
+        day = '%s-%s'%(M,N)
+    except:pass
+    print ' [*] terakhir di updated pada tanggal %s bulan %s tahun %s jam %s'%(day, month, year, jam);time.sleep(0.03)
+    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;96m-\x1b[0m'
+    jalan('\n [%s✓%s] berhasil mengechek data² akun facebook\n\n'%(O,N));exit()
 
 ### CEK HASIL CRACK ###
 def cekhasil():
