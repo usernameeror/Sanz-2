@@ -148,7 +148,7 @@ def menu():
 
     logo()
     print ''
-    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor      : \x1b[1;92mBINTANG-XD'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor      : \x1b[1;92mBINTANG-XD \x1b[1;93mX \x1b[1;92mHARIS GANZ'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion     : \x1b[1;92m5.3'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mYouTube     : \x1b[1;92mBINTANG XD'
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
@@ -286,7 +286,7 @@ def fbbaru():
 	x = 11111111111
 	xx = 77777777777
 	idx = "1000" 
-	limit = int(input(" [+] masukan jumlah id (cth 5000): "))
+	limit = int(input(" [+] masukan jumlah id Maksimal 5000 id: "))
 	try:
 		for n in range(limit):
 			_ = random.randint(x,xx)
