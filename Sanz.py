@@ -186,7 +186,7 @@ def menu():
     	atursandi()
     elif asw == "5":
     	fbbaru()
-        atursandi
+        atursandi()
     elif asw == "6":
     	pencarian()
     elif asw == "7":
