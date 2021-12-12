@@ -190,9 +190,9 @@ def menu():
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
-        cekopsi()
+        file_cp()
     elif asw == "9":
-	file_cp()
+	cekhasil()
     elif asw == "10":
  	laporbug()
     elif asw == "0":
