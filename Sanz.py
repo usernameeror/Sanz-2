@@ -188,7 +188,7 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-    	pencarian()
+    	target()
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
@@ -295,10 +295,64 @@ def fbbaru():
 	except KeyError:
 		exit(" [!] akun tidak tersedia atau error")
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
-### DUMP PENCARIAN NAMA ###
-def pencarian():
-    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
-    raw_input('\n [*] kembali ')
+### CEK DATA² TARGET ###
+def target():
+    try:token = open('token.txt','r').read()
+    except (KeyError,IOError):jalan('%s╚══[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P));menu_log()
+    idt = input("%s╠══[%s•%s] %sID Target : "%(O,P,O,P))
+    try:
+        zx = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token);zy = json.loads(zx.text)
+    except (KeyError,IOError):jalan('%s╚══[%s!%s] %sID Tidak Ditemukan'%(M,P,M,P));menu()
+    try:nm = zy["name"]
+    except (KeyError,IOError):nm = ("-")
+    try:nd = zy["first_name"]
+    except (KeyError,IOError):nd = ("-")
+    try:nt = zy["middle_name"]
+    except (KeyError,IOError):nt = ("-")
+    try:nb = zy["last_name"]
+    except (KeyError,IOError):nb = ("-")
+    try:ut = zy["birthday"]
+    except (KeyError,IOError):ut = ("-")
+    try:gd = zy["gender"]
+    except (KeyError,IOError):gd = ("-")
+    try:em = zy["email"]
+    except (KeyError,IOError):em = ("-")
+    try:lk = zy["link"]
+    except (KeyError,IOError):lk = ("-")
+    try:us = zy["username"]
+    except (KeyError,IOError):us = ("-")
+    try:rg = zy["religion"]
+    except (KeyError,IOError):rg = ("-")
+    try:rl = zy["relationship_status"]
+    except (KeyError,IOError):rl = ("-")
+    try:rls = zy["significant_other"]["name"]
+    except (KeyError,IOError):rls = ("-")
+    try:lc = zy["location"]["name"]
+    except (KeyError,IOError):lc = ("-")
+    try:ht = zy["hometown"]["name"]
+    except (KeyError,IOError):ht = ("-")
+    try:ab = zy["about"]
+    except (KeyError,IOError):ab = ("-")
+    try:lo = zy["locale"]
+    except (KeyError,IOError):lo = ("-")
+    jalan('%s╠══[%s•%s] %sNama : %s'%(O,P,O,P,nm))
+    jalan('%s╠══[%s•%s] %sNama Depan : %s'%(O,P,O,P,nd))
+    jalan('%s╠══[%s•%s] %sNama Tengah : %s'%(O,P,O,P,nt))
+    jalan('%s╠══[%s•%s] %sNama Belakang : %s'%(O,P,O,P,nb))
+    jalan('%s╠══[%s•%s] %sTTL : %s'%(O,P,O,P,ut))
+    jalan('%s╠══[%s•%s] %sGender : %s'%(O,P,O,P,gd))
+    jalan('%s╠══[%s•%s] %sEmail : %s'%(O,P,O,P,em))
+    jalan('%s╠══[%s•%s] %sLink : %s'%(O,P,O,P,lk))
+    jalan('%s╠══[%s•%s] %sUsername : %s'%(O,P,O,P,us))
+    jalan('%s╠══[%s•%s] %sAgama : %s'%(O,P,O,P,rg))
+    jalan('%s╠══[%s•%s] %sStatus Hubungan : %s'%(O,P,O,P,rl))
+    jalan('%s╠══[%s•%s] %sHubungan Dengan : %s'%(O,P,O,P,rls))
+    jalan('%s╠══[%s•%s] %sTempat Tinggal : %s'%(O,P,O,P,lc))
+    jalan('%s╠══[%s•%s] %sTempat Asal : %s'%(O,P,O,P,ht))
+    jalan('%s╠══[%s•%s] %sTentang : %s'%(O,P,O,P,ab))
+    jalan('%s╠══[%s•%s] %sLocale : %s'%(O,P,O,P,lo))
+    print('%s║'%(O))
+    input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
     menu()
 	
 ####INFO TOOLS####
