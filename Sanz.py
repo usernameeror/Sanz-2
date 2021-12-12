@@ -156,7 +156,6 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;92mPremium Sampai Kiamat%s"%(H,N))
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
     print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mIP        \x1b[1;93m: %s"%(IP))
-    jalan(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93m SELAMAT DATANG BOSKU SELAMAT MEMAKAI TOOLS KAMI
     print("\n \x1b[1;92m[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
     print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mCrack ID Teman Publik")
     print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mCrack ID Teman Massal")
