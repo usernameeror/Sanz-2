@@ -188,7 +188,7 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-    	target()
+    	cek_ingfo(kontol)
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
