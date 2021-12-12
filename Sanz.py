@@ -195,8 +195,6 @@ def menu():
 	cekhasil()
     elif asw == "10":
  	laporbug()
-    elif asw == "11":
-        info_tools()
     elif asw == "0":
     	os.system('rm -f token.txt')
     	jalan(" \x1b[1;92m[\x1b[1;93m✓\x1b[1;92m] \x1b[1;93mberhasil menghapus token ")
