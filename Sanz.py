@@ -194,6 +194,7 @@ def menu():
     elif asw == "8":
         cekopsi()
         ubahpw()
+        cek_opsi()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
