@@ -193,6 +193,7 @@ def menu():
     	seting_yntkts()
     elif asw == "8":
         cekopsi()
+        ubahpw()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
