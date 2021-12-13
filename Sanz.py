@@ -188,7 +188,7 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-    	target()
+    	def ___jeeck___sayang___almira___inpocook___(lalalalaganigani):
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
@@ -296,7 +296,7 @@ def fbbaru():
 		exit(" [!] akun tidak tersedia atau error")
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 ### CEK DATA² TARGET ###
-def target():
+def def ___jeeck___sayang___almira___inpocook___(lalalalaganigani):
     try:
         user = raw_input ( " \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Masukan Id : ")
         if user == '':
