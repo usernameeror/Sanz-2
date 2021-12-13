@@ -421,7 +421,6 @@ def buatngecek():
 		except requests.exceptions.ConnectionError:
 			
                         
-			continue
 		print("\n")
 def log_hasil(user, pasw, ttll):
     print(war+C+user+"|"+pasw+" | "+ttll)
