@@ -188,7 +188,6 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-  def ___jeeck___sayang___almira___inpocook___(lalalalaganigani):
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
