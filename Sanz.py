@@ -403,21 +403,15 @@ def yo_ndak_tau_ko_tanya_saia():
 
 ####CEK OPSI HASIL CRACK####
 def buatngecek():
-	("Hasil")
-	files = input("\n File : ")
-	try:
-		buka_baju = open(files,"r").readlines()
-	except FileNotFoundError:
-		print(war+"File Tidak Ada !")
-		time.sleep(2)
-		exit()
-	print(bulat+"Total Akun : "+u+str(len(buka_baju)))
-	print(bulat+c+"="*50)
-	for memek in buka_baju:
-		kontol = memek.replace("\n","")
-#		titidd  = kontol.split("* --> ")
-#		titid  = titidd[1].split("|")
-		titid  = kontol.split("|")
+	dirs = os.listdir("CP")
+	print("")
+	for file in dirs:
+		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] CP/"+file)
+	print("\n \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] masukan file (ex: CP/%s.txt)"%(tanggal))
+	files = raw_input(" \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mnama file  \x1b[1;97m: \x1b[1;92m")
+	if files == "":
+		menu()
+
 		try:
 			ttll = ("%s"%(titid[2]))
 		except:
