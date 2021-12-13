@@ -420,7 +420,7 @@ def buatngecek():
 			log_hasil(titid[0], titid[1], ttll)
 		except requests.exceptions.ConnectionError:
 			
-		 Exception as e:
+                        e:
 			continue
 		print("\n")
 def log_hasil(user, pasw, ttll):
