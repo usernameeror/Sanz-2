@@ -419,7 +419,7 @@ def buatngecek():
 		try:
 			log_hasil(titid[0], titid[1], ttll)
 		except requests.exceptions.ConnectionError:
-			continue
+			
 		except Exception as e:
 			continue
 		print("\n")
