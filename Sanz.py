@@ -439,7 +439,7 @@ def ubahpw():
 		if len(pw2) <= 5:
 			exit(" \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mkata sandi minimal 6 karakter ")
 		else:
-			pwbaru.append(pw2)
+			(pw2)
 	else:
 		pass
 
