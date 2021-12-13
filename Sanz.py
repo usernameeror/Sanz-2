@@ -188,7 +188,7 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-        igg()
+         igg()
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
