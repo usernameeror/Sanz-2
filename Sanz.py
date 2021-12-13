@@ -188,7 +188,7 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-    	target()
+    	igg()
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
@@ -296,87 +296,10 @@ def fbbaru():
 		exit(" [!] akun tidak tersedia atau error")
 	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
 ### CEK DATA² TARGET ###
-def target():
-	try:
-		toket=open("login.txt","r").read()
-	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Kentod!!"))
-		os.system("rm -rf login.txt")
-		login()
-	try:
-		idt = input(k+"\n["+p+"?"+k+"]"+p+" ID Target        : ")
-		try:
-			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-			op = json.loads(jok.text)
-			print((k+"["+p+"+"+k+"]"+p+" Nama Akun     : "+op["name"]))
-			print((k+"["+p+"+"+k+"]"+p+" Username         : "+op["username"]))
-			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-				op = json.loads(jok.text)
-				print((k+"["+p+"+"+k+"]"+p+" Email            : "+op["email"]))
-			except KeyError:
-				print((k+"["+p+"+"+k+"]"+p+" Email            : -"))
-			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-				op = json.loads(jok.text)
-				print((k+"["+p+"+"+k+"]"+p+" Tanggal Lahir    : "+op["birthday"]))
-			except KeyError:
-				print((k+"["+p+"+"+k+"]"+p+" Tanggal Lahir    : -"))
-			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-				op = json.loads(jok.text)
-				print((k+"["+p+"•"+k+"]"+p+" Gender           : "+op["gender"]))
-			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Gender           : -"))
-			try:
-				r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
-				id = []
-				z = json.loads(r.text)
-				qq = (op["first_name"]+".json").replace(" ","_")
-				ys = open(qq , "w")
-				for i in z["data"]:
-					id.append(i["id"])
-					ys.write(i["id"])
-				ys.close()
-				print((k+"["+p+"+"+k+"]"+p+" Total Teman     : %s"%(len(id))))
-			except KeyError:
-				print((k+"["+p+"+"+k+"]"+p+" Total Teman     : -"))
-			try:
-				a=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
-				id = []
-				b = json.loads(a.text)
-				bb = (op["first_name"]+".json").replace(" ","_")
-				jw = open(bb , "w")
-				for c in b["data"]:
-					id.append(c["id"])
-					jw.write(c["id"])
-				jw.close()
-				print((k+"["+p+"+"+k+"]"+p+" Total Follower   : %s"%(len(id))))
-			except KeyError:
-				print((k+"["+p+"+"+k+"]"+p+" Total Follower   : -"))
-			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-				op = json.loads(jok.text)
-				print((k+"["+p+"+"+k+"]"+p+" Website          : "+op["website"]))
-			except KeyError:
-				print((k+"["+p+"+"+k+"]"+p+" Website          : -"))
-			except IOError:
-				print((k+"["+p+"+"+k+"]"+p+" Website          : -"))
-			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-				op = json.loads(jok.text)
-				print((k+"["+p+"+"+k+"]"+p+" Waktu Update      : "+op["updated_time"]))
-			except KeyError:
-				print((k+"["+p+"+"+k+"]"+p+" Waktu Update      : -"))
-			except IOError:
-				print((k+"["+p+"+"+k+"]"+p+" Waktu Update      : -"))
-			input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
-			menu()
-		except KeyError:
-			input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
-			menu()
-	except Exception as e:
-		exit(k+"["+p+"•"+k+"]"+p+" Error : %s"%e)
+def igg():
+    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
+    raw_input('\n [*] kembali ')
+    menu()
 
 ####INFO TOOLS####
 def info_tools():
