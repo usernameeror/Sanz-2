@@ -456,7 +456,7 @@ def cek_opsi(user,pw):
 		"referer":"https://mbasic.facebook.com/",
 		"user-agent":"nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+"
 	})
-	soup=parser(session.get(+"'str'/login/?next&ref=dbl&fl&refid=8").text,"html.parser")
+	soup=parser(session.get(/login/?next&ref=dbl&fl&refid=8").text,"html.parser")
 	link=soup.find("form",{"method":"post"})
 	for x in soup("input"):
 		data.update({x.get("name"):x.get("value")})
