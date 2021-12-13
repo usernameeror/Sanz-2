@@ -404,7 +404,7 @@ def yo_ndak_tau_ko_tanya_saia():
 ####CEK OPSI HASIL CRACK####
 def buatngecek():
 	("Hasil")
-	files = input("\n"+war+"Nama File : ")
+	files = input("\n+"Nama File : ")
 	try:
 		buka_baju = open(files,"r").readlines()
 	except FileNotFoundError:
