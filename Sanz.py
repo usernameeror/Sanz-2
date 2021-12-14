@@ -558,7 +558,7 @@ def api(uid, pwx):
 				sleep(1.5)
 				t -= 1
 		elif "session_key" in status_masuk.text and "EAAA" in status_masuk.text:
-			print("\r  %s* --> %s|%s|%s"%(H,uid, pw, send.json()["access_token"]))
+			print("\r  %s[OK] %s|%s|%s"%(H,uid, pw, send.json()["access_token"]))
 			ok.append("%s|%s"%(uid, pw))
 			open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
 			break
