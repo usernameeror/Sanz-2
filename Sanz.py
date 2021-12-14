@@ -148,9 +148,9 @@ def menu():
 
     logo()
     print ''
-    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor      : \x1b[1;92mBINTANG-XD \x1b[1;93mX \x1b[1;92mHARIS GANZ'
-    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion     : \x1b[1;92m5.3'
-    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mYouTube     : \x1b[1;92mBINTANG XD'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor    : \x1b[1;92mBINTANG-XD \x1b[1;93mX \x1b[1;92mHARIS GANZ'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion   : \x1b[1;92m5.3'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mYouTube   : \x1b[1;92mBINTANG XD'
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mBergabung \x1b[1;93m: %s"%(tgl))
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;92mPremium Sampai Kiamat%s"%(H,N))
@@ -163,7 +163,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m04\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Postingan")
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m] \x1b[1;93mCrack Random \x1b[1;92mID FB New")
     print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mCrack Dari \x1b[1;92mPencarian Nama \x1b[1;93m{\x1b[1;91mBETA\x1b[1;93m}")
-    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings \x1b[1;92mUser Agent \x1b[1;92mU\x1b[1;97m/\x1b[1;93mA")
+    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings \x1b[1;92mUser Agent \x1b[1;94mU\x1b[1;97m/\x1b[1;95mA")
     print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mOpsi CheckPoint \x1b[1;93m{\x1b[1;91mBETA\x1b[1;93m}")
     print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mHasil Crack")
     print(" \x1b[1;92m[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mLaporkan \x1b[1;92mBug Script")
