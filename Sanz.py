@@ -307,7 +307,7 @@ def info_tools():
     print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Github   \x1b[1;93m: https://github.com/bot-85'%(N,H,N);time.sleep(0.07)
     print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Facebook \x1b[1;93m: Bintang Tzy'%(N,H,N);time.sleep(0.07)
     print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Link FB  \x1b[1;93m: https://www.facebook.com/bintangt.zy.92'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Ig       \x1b[1;93m: Ndak punya'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Team     \x1b[1;93m: XNX-CODE TEAM 2021'%(N,H,N);time.sleep(0.07)
     print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
     print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
     raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
