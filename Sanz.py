@@ -192,7 +192,7 @@ def menu():
     elif asw == "7":
     	seting_yntkts()
     elif asw == "8":
-        scr()
+        buatngecek()
     elif asw == "9":
 	cekhasil()
     elif asw == "10":
@@ -402,10 +402,33 @@ def yo_ndak_tau_ko_tanya_saia():
         print '\n %s[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
 
 ####CEK OPSI HASIL CRACK####
-def scr():
-    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
-    raw_input('\n [*] kembali ')
-    menu()
+def buatngecek():
+	print(" \033[1;96m[\033[1;97m?\033[1;96m]\033[1;97m masukan format CP/namafile")
+	dirs = os.listdir("CP")
+	print("")
+	for file in dirs:
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m "+file)
+	files = raw_input("\n \033[1;96m[\033[1;97m?\033[1;96m]\033[1;96m Pilih file \033[1;97m:\033[1;93m ")
+	try:
+		buka_baju = open(files,"r").readlines()
+	except FileNotFoundError:
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m File tidak ada")
+		time.sleep(2); main()
+	print(" \033[1;96m[\033[1;97m+\033[1;96m]\033[1;96m Total Akun \033[1;97m:\033[1;93m "+str(len(buka_baju)))
+	print("\033[1;96m¤"*48)
+	for memek in buka_baju:
+		kontol = memek.replace("\n","")
+		titid  = kontol.split("|")
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m check: "+kontol)
+		try:
+			check_in(titid[0], titid[1])
+		except requests.exceptions.ConnectionError:
+			continue
+		print("\033[1;96m¤"*48)
+	print("\033[1;96m¤"*48)
+	print("")
+	exit(" \33[3;1m\033[1;97mSelesai.....jangan lupa \33[0;1m\033[1;93mCOLMEX's \033[1;97m")
+	
 ####LAPORAN BUG####
 def laporbug():
     asulo = raw_input('\n \x1b[1;92m[?] masukan laporan bug script : \x1b[1;92m').replace(' ', '%20')
