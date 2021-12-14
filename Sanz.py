@@ -164,7 +164,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m] \x1b[1;93mCrack Random \x1b[1;92mID FB New")
     print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m] \x1b[1;93mCrack Dari \x1b[1;92mPencarian Nama \x1b[1;93m{\x1b[1;91mBETA\x1b[1;93m}")
     print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m] \x1b[1;93mSettings \x1b[1;92mUser Agent \x1b[1;92mU\x1b[1;97m/\x1b[1;93mA")
-    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mOpsi CheckPoint \x1b[1;93m[\x1b[1;91mRUSAK\x1b[1;93m]")
+    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mOpsi CheckPoint \x1b[1;93m{\x1b[1;91mBETA\x1b[1;93m}")
     print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mCheck \x1b[1;92mHasil Crack")
     print(" \x1b[1;92m[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mLaporkan \x1b[1;92mBug Script")
     print(" \x1b[1;92m[\x1b[1;93m11\x1b[1;92m] \x1b[1;93mInfo \x1b[1;92mTools/Script")
