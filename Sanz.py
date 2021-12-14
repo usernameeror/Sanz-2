@@ -43,6 +43,7 @@ IP = requests.get('https://api.ipify.org').text
 id = []
 cp = []
 ok = []
+ttl = []
 loop = 0
 
 ### GLOBAL WAKTU ###
