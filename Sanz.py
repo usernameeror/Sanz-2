@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 # coding=utf-8
-# author : BINTANG-XD
+# author : Sanz Tzy
 
 ### IMPORT MODULE ###
 import os, sys, re, time, requests, calendar, random,json
@@ -82,7 +82,7 @@ def logo():
  \x1b[1;92m\_____  \   \x1b[1;93m_______  /  /_\  \  /   |   \   /     /
  \x1b[1;92m/        \ \x1b[1;93m/______/ /    |    \/    |    \ /     /_ 
  \x1b[1;92m/______  /          \x1b[1;93m\____|__  /\____|__  //_______ \  
- \x1b[1;93m       \/                    \/         \/         \/    """%(N))
+ \x1b[1;93m       \/                   \/         \/         \/    """%(N))
    
 ### BAGIAN LOGIN ###
 def tokenz():
@@ -93,7 +93,7 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
 		logo()
-		print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;93m: \x1b[1;93mBINTANG-XD"%(N))
+		print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;93m: \x1b[1;93mSanz Tzy"%(N))
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mGithub     \x1b[1;93m: \x1b[1;93mgithub.com/bot-85")
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m---------------------------------------------")
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mBergabung  \x1b[1;93m: %s"%(tgl))
@@ -148,7 +148,7 @@ def menu():
 
     logo()
     print ''
-    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor    : \x1b[1;92mBINTANG-XD \x1b[1;93mX \x1b[1;92mHARIS GANZ'
+    print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor    : \x1b[1;92mSanz Tzy \x1b[1;93mX \x1b[1;92mHARIS GANZ'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion   : \x1b[1;92m5.3'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mYouTube   : \x1b[1;92mBINTANG XD'
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
