@@ -411,7 +411,7 @@ def buatngecek():
 	files = raw_input("\n \033[1;96m[\033[1;97m?\033[1;96m]\033[1;96m Pilih file \033[1;97m:\033[1;93m ")
 	try:
 		buka_baju = open(files,"r").readlines()
-	except FileNotFoundError:
+	except FileNotFoundError: ')
 		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m File tidak ada")
 		time.sleep(2); main()
 	print(" \033[1;96m[\033[1;97m+\033[1;96m]\033[1;96m Total Akun \033[1;97m:\033[1;93m "+str(len(buka_baju)))
