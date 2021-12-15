@@ -100,10 +100,10 @@ def tokenz():
                 logo()
 		print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;93m: \x1b[1;93mSanz Tzy"%(N))
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mFacebook     \x1b[1;93m: \x1b[1;93mBintang Tzy")
-		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m---------------------------------------------")
+		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mBergabung  \x1b[1;93m: %s"%(tgl))
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mStatus     \x1b[1;93m: %s\x1b[1;91mA M P A S%s"%(H,N))
-		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m---------------------------------------------")
+		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mIP         \x1b[1;93m: %s"%(IP))
 		token = raw_input('\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mtoken Fb disini \x1b[1;93m: \x1b[1;92m')
 		try:
@@ -156,10 +156,10 @@ def menu():
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor    : \x1b[1;92mSanz Tzy \x1b[1;93mX \x1b[1;92mHARIS GANZ'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion   : \x1b[1;92m5.5'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mFacebook  : \x1b[1;92mBintang Tzy'
-    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mBergabung \x1b[1;93m: %s"%(tgl))
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;91mA M P A S%s"%(H,N))
-    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m--------------------------------------------")
+    print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
     print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mIP        \x1b[1;93m: %s"%(IP))
     jalan("\n \x1b[1;92m[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
     print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Publik \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
