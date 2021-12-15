@@ -576,9 +576,9 @@ def sandimanual():
 	elif len(pwek)<=5:
 		exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mmasukan sandi minimal 6 angka\x1b[1;97m!"%(M))
 	print("\n \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
-	print(" \x1b[1;92m[\x1b[1;93m1\x1b[1;92m]. \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
-	print(" \x1b[1;92m[\x1b[1;93m2\x1b[1;92m]. \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
-	print(" \x1b[1;92m[\x1b[1;93m3\x1b[1;92m]. \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
+	print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
+	print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
+	print(" \x1b[1;92m[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
 	ask=raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
 	if ask=="":
 		exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
@@ -612,9 +612,9 @@ def sandimanual():
 	
 def sandiotomatis():
 	print("\n \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
-	print(" \x1b[1;92m[\x1b[1;93m1\x1b[1;92m]. \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
-	print(" \x1b[1;92m[\x1b[1;93m2\x1b[1;92m]. \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
-	print(" \x1b[1;92m[\x1b[1;93m3\x1b[1;92m]. \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
+	print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
+	print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
+	print(" \x1b[1;92m[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
 	ask=raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
 	if ask=="":
 		exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
@@ -712,7 +712,7 @@ def api(uid, pwx):
 		elif "session_key" in status_masuk.text and "EAAA" in status_masuk.text:
 			print("\r  %s[OK] %s|%s|%s"%(H,uid, pw, send.json()["access_token"]))
 			ok.append("%s|%s"%(uid, pw))
-			open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
+			open("OK/%s.txt"%(tanggal),"a").write("  [OK] %s|%s\n"%(uid, pw))
 			break
 		elif "User must verify their account on www.facebook.com (405)" in status_masuk.text:
 			try:
