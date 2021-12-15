@@ -94,7 +94,7 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
 ### BAGIAN LOGO ###
-def logo():
+def logi():
 	os.system("clear")
 	print("""%s
   _______           _                   
@@ -755,3 +755,4 @@ if __name__ == '__main__':
 	os.system("git pull")
 	buatfolder()
 	menu()
+        logi()
