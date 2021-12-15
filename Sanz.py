@@ -474,10 +474,6 @@ def cek_opsi(user,pw):
 	elif "login_error" in str(response):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
 		print(" [!] %s"%(oh))
-	else:
-		loop+=1
-		print(" [!] login gagal, silahkan cek kembali id dan kata sandi")
-
 def ubah_pw(user,pw,session,response,link2):
 	dat,dat2={},{}
 	but=["submit[Yes]","nh","fb_dtsg","jazoest","checkpoint_data"]
