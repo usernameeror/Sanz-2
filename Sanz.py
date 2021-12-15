@@ -93,17 +93,7 @@ def tokenz():
 		menu()
 	except (KeyError, IOError):
 		os.system('clear')
-### BAGIAN LOGO ###
-def logi():
-	os.system("clear")
-	print("""%s
-  _______           _                   
- |__   __|         | |                  
-    | |      ___   | | __   ___   _ __  
-    | |     / _ \  | |/ /  / _ \ | '_ \ 
-    | |    | (_) | |   <  |  __/ | | | |
-    |_|     \___/  |_|\_\  \___| |_| |_|
-
+                logo()
 		print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;93m: \x1b[1;93mSanz Tzy"%(N))
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mGithub     \x1b[1;93m: \x1b[1;93mgithub.com/bot-85")
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m---------------------------------------------")
@@ -755,4 +745,3 @@ if __name__ == '__main__':
 	os.system("git pull")
 	buatfolder()
 	menu()
-        logi()
