@@ -386,7 +386,7 @@ def cekopsi():
 		titid  = kontol.split("|")
 		print("\n \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] cek : %s%s%s"%(K,kontol.replace("  * --> ",""),N))
 		try:
-			cek_opsi(titid[0].replace("  * --> ",""), titid[1])
+			cek_opsi(titid[0].replace("  [CP] ",""), titid[1])
 		except requests.exceptions.ConnectionError:
 			pass
 	print("\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mcek akun sudah selesai\x1b[1;97m...")
