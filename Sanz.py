@@ -40,10 +40,14 @@ N = '\x1b[0m'    # WARNA MATI
 
 ### GLOBAL NAMA ###
 IP = requests.get('https://api.ipify.org').text
+url = "https://mbasic.facebook.com"
 id = []
 cp = []
 ok = []
-ttl = []
+ubahP = []
+pwbaru = []
+data = {}
+data2 = {}
 loop = 0
 
 ### GLOBAL WAKTU ###
