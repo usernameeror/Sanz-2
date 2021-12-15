@@ -476,7 +476,7 @@ def cek_opsi(user,pw):
 		print(" [!] %s"%(oh))
 	else:
 		loop+=1
-		print(" [!] login gagal, silahkan cek kembali id dan kata sandi")
+		print(" [!] Account terkena CheckPoint/Terkena Sesi ")
 
 def ubah_pw(user,pw,session,response,link2):
 	dat,dat2={},{}
