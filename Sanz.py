@@ -112,6 +112,7 @@ def tokenz():
                 print '%s \x1b[1;93m>%s \x1b[1;93mjangan lupa! url ubah ke %shttps://m.facebook.com'%(B,N,H)
                 print '%s \x1b[1;93m>%s \x1b[1;93msetelah di alihkan ke google chrome. klik %stitik tiga'%(B,N,H)
                 print '%s \x1b[1;93m>%s \x1b[1;93mlalu klik %sCari di Halaman%s \x1b[1;93mTinggal ketik %sEAAA%s \x1b[1;93mLalu salin.'%(B,N,H,N,H,N)
+                print '%s \x1b[1;93m>%s \x1b[1;93mJangan lupa kunjungi Facebook me\x1b[1;92m Bintang Tzy \x1b[1;93mterimakasih
                 print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
 		token = raw_input('\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mtoken Fb disini \x1b[1;93m: \x1b[1;92m')
 		try:
