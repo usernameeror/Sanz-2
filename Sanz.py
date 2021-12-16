@@ -160,7 +160,7 @@ def menu():
         exit(" %s[!] anda tidak terhubung ke internet!"%(M))
 
     logo()
-    print ''
+    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mAuthor    : \x1b[1;92mSanz Tzy \x1b[1;93mX \x1b[1;92mHARIS GANZ'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mVersion   : \x1b[1;92m5.5'
     print ' \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mFacebook  : \x1b[1;92mBintang Tzy'
@@ -169,6 +169,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93mStatus    \x1b[1;93m: %s\x1b[1;91mA M P A S%s"%(H,N))
     print(" \x1b[1;92m[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
     print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mIP        \x1b[1;93m: %s"%(IP))
+    print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
     jalan("\n \x1b[1;92m[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
     print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Publik \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
     print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Massal \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
