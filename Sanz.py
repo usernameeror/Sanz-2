@@ -88,6 +88,9 @@ def logo():
  \x1b[1;92m/ V2.1   \ \x1b[1;93m/______/ /    |    \/    |    \ \x1b[1;92m/     /_ 
  \x1b[1;92m/______  /          \x1b[1;93m\____|__  /\____|__  /\x1b[1;92m/_______ \  
  \x1b[1;92m       \/     \x1b[1;93m              \/         \/         \x1b[1;92m\/    """%(N))
+ \x1b[1;92m Welcome to Tools/Script saya disini selaku Author
+ \x1b[1;92m Jangan lupa kunjungi Facebook saya Bintang Tzy
+ \x1b[1;92m Terimakasih anda sudah memakai tools/Script Saya
    
 ### BAGIAN LOGIN ###
 def tokenz():
