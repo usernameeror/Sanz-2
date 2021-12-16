@@ -101,7 +101,7 @@ def tokenz():
                 print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
                 print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;93m: \x1b[1;93mSanz Tzy"%(N))     
 		print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mWhatshap   \x1b[1;93m: \x1b[1;93m081210xxxx"%(N))   
-		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mFacebook     \x1b[1;93m: \x1b[1;93mBintang Tzy")      
+		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mFacebook   \x1b[1;93m: \x1b[1;93mBintang Tzy")      
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")     
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mBergabung  \x1b[1;93m: %s"%(tgl))                     
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mStatus     \x1b[1;93m: %s\x1b[1;91mA M P A S%s"%(H,N))    
