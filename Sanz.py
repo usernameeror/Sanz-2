@@ -98,6 +98,7 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
                 logo()
+                print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
                 print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;93m: \x1b[1;93mSanz Tzy"%(N))
 		print(" %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mWhatshap   \x1b[1;93m: \x1b[1;93m081210xxxx"%(N))
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mFacebook     \x1b[1;93m: \x1b[1;93mBintang Tzy")
@@ -106,6 +107,7 @@ def tokenz():
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mStatus     \x1b[1;93m: %s\x1b[1;91mA M P A S%s"%(H,N))
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
 		print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mIP         \x1b[1;93m: %s"%(IP))
+                print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
 		token = raw_input('\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mtoken Fb disini \x1b[1;93m: \x1b[1;92m')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
