@@ -360,7 +360,7 @@ def cekhasil():
 			file = raw_input("\n ╠══[?] \x1b[1;93mmau Cek yang mana ? : \x1b[1;92m" )
 			if file == "":
 				menu()
-			totalcp = ╠══open("CP/%s"%(file)).read().splitlines()
+			totalcp = open("CP/%s"%(file)).read().splitlines()
 		except IOError:
 			exit(" ╠══[!] file %s tidak tersedia"%(file))
 		nm_file = ("%s"%(file)).replace("-", " ")
