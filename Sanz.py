@@ -182,7 +182,7 @@ def menu():
     print(" \x1b[1;92m╠══[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mLaporkan \x1b[1;92mBug Script")
     print(" \x1b[1;92m╠══[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mInfo \x1b[1;92mTools/Script")
     print(" \x1b[1;92m╠══[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m \x1b[1;91mHapus Token"%(M,N))
-    asw = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
+    asw = raw_input("\n \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
     if asw == "":
     	menu()
     elif asw == "1":
@@ -212,10 +212,10 @@ def menu():
         info_tools()
     elif asw == "0":
     	os.system('rm -f token.txt')
-    	jalan(" \x1b[1;92m[\x1b[1;93m✓\x1b[1;92m] \x1b[1;93mberhasil menghapus token ")
+    	jalan(" \x1b[1;92m╠══[\x1b[1;93m✓\x1b[1;92m] \x1b[1;93mberhasil menghapus token ")
     	exit()
     else:
-    	jalan(" [!] pilih jawaban dengan bener ! ")
+    	jalan(" ╠══[!] pilih jawaban dengan bener ! ")
     	menu() 
 		
 ### DUMP PUBLIK ###
@@ -224,15 +224,15 @@ def publik():
 	try:
 		token = open("token.txt", "r").read()
 	except IOError:
-		exit(" \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mtoken kadaluwarsa")
-	print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93misi \x1b[1;97m'\x1b[1;92mme\x1b[1;97m' \x1b[1;93mjika ingin crack dari daftar teman")
-	idt = raw_input(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mmasukan id atau username \x1b[1;93m: \x1b[1;92m")
+		exit(" \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mtoken kadaluwarsa")
+	print(" \x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93misi \x1b[1;97m'\x1b[1;92mme\x1b[1;97m' \x1b[1;93mjika ingin crack dari daftar teman")
+	idt = raw_input(" \x1b[1;92m╠══[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mmasukan id atau username \x1b[1;93m: \x1b[1;92m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			id.append(i["id"]+"<=>"+i["name"])
 	except KeyError:
-		exit(" \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93makun tidak tersedia atau list teman private")
-	print("\n \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mtotal id  \x1b[1;93m: %s%s%s\x1b[1;92m"%(M,len(id),N)) 
+		exit(" \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93makun tidak tersedia atau list teman private")
+	print("\n \x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mtotal id  \x1b[1;93m: %s%s%s\x1b[1;92m"%(M,len(id),N)) 
   
 ### DUMP MASSAL ###
 def massal():
@@ -240,22 +240,22 @@ def massal():
 	try:
 		token = open("token.txt", "r").read()
 	except IOError:
-		exit(" [!] token kadaluwarsa")
+		exit(" ╠══[!] token kadaluwarsa")
 	try:
-		tanya_total = int(raw_input(" [?] masukan jumlah target : "))
+		tanya_total = int(raw_input(" ╠══[?] masukan jumlah target : "))
 	except:tanya_total=1
-	print(" [*] isi 'me' jika ingin crack dari daftar teman")
+	print(" ╠══[*] isi 'me' jika ingin crack dari daftar teman")
 	for t in range(tanya_total):
 		t +=1
-		idt = raw_input(" [?] id target %s : "%(t))
+		idt = raw_input(" ╠══[?] id target %s : "%(t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				uid = i["id"]
 				nama = i["name"]
 				id.append(uid+"<=>"+nama)
 		except KeyError:
-			print(" [!] akun tidak tersedia atau list teman private")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
+			print(" ╠══[!] akun tidak tersedia atau list teman private")
+	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP FOLLOWERS ###
 def followers():
