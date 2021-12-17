@@ -278,7 +278,8 @@ def followers():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit(" ╠══[!] akun tidak tersedia atau list teman private")
-	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
+        print('%s \x1b[1;92m║'%(O))
+	print(" ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP POSTINGAN ###
 def postingan():
@@ -295,7 +296,8 @@ def postingan():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit(" ╠══[!] postingan tidak tersedia atau post private")
-	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
+        print('%s \x1b[1;92m║'%(O))
+	print(" ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP NEW FB ###
 def fbbaru():
@@ -310,11 +312,13 @@ def fbbaru():
 			id.append(__+"<=>"+str(_))
 	except KeyError:
 		exit(" ╠══[!] akun tidak tersedia atau error")
-	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
+        print('%s \x1b[1;92m║'%(O))
+	print(" ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 ### CEK DATA² TARGET ###
 def igg():
     jalan(' ╠══[*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
-    raw_input('\n ╠══[*] kembali ')
+    print('%s \x1b[1;92m║'%(O))
+    raw_input(' ╠══[*] kembali ')
     menu()
 ####INFO TOOLS####
 def info_tools():
@@ -328,13 +332,16 @@ def info_tools():
     print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Team     \x1b[1;93m: XNX-CODE TEAM 2021'%(N,H,N);time.sleep(0.07)
     print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
     print '\n %s╠══[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
-    raw_input('\n  ╠══[ %sKEMBALI%s ] '%(O,N));menu()
+    print('%s \x1b[1;92m║'%(O))
+    raw_input('  ╠══[ %sKEMBALI%s ] '%(O,N));menu()
 
 ### CEK HASIL CRACK ###
 def cekhasil():
-	print('\n ╠══[1]. l\x1b[1;92mihat hasil crack OK ')
+        print('%s \x1b[1;92m║'%(O))
+	print(' ╠══[1]. l\x1b[1;92mihat hasil crack OK ')
 	print(' ╠══[2]. \x1b[1;93mlihat hasil crack CP ')
-	anjg = raw_input('\n ╠══[?] pilih : \x1b[1;93m')
+        print('%s \x1b[1;92m║'%(O))
+	anjg = raw_input(' ╠══[?] pilih : \x1b[1;93m')
 	if anjg == '':
 		menu()
 	elif anjg == "1":
@@ -343,7 +350,8 @@ def cekhasil():
 		for file in dirs:
 			print(" [*] "+file)
 		try:
-			file = raw_input("\n [?] mau lihat hasil yang mana ?: ")
+                        print('%s \x1b[1;92m║'%(O))
+			file = raw_input(" [?] mau lihat hasil yang mana ?: ")
 			if file == "":
 				menu()
 			totalok = open("OK/%s"%(file)).read().splitlines()
@@ -354,7 +362,8 @@ def cekhasil():
 		print("\n *-------------------------------------------------*")
 		print(" \x1b[1;92m╠══[+] tanggal : \x1b[1;93m%s -total : \x1b[1;93m%s"%(del_txt, len(totalok)))
 		os.system("cat OK/%s"%(file))
-		raw_input("\n ╠══[*]\x1b[1;93m tekan enter untuk kembali ke menu")
+                print('%s \x1b[1;92m║'%(O))
+		raw_input(" ╠══[*]\x1b[1;93m tekan enter untuk kembali ke menu")
 		menu()
 	elif anjg == "2":
 		dirs = os.listdir("CP")
@@ -362,7 +371,8 @@ def cekhasil():
 		for file in dirs:
 			print(" [*] "+file)
 		try:
-			file = raw_input("\n ╠══[?] \x1b[1;93mmau Cek yang mana ? : \x1b[1;92m" )
+                        print('%s \x1b[1;92m║'%(O))
+			file = raw_input(" ╠══[?] \x1b[1;93mmau Cek yang mana ? : \x1b[1;92m" )
 			if file == "":
 				menu()
 			totalcp = open("CP/%s"%(file)).read().splitlines()
@@ -373,7 +383,8 @@ def cekhasil():
 		print("\n *-------------------------------------------------*")
 		print(" \x1b[1;93m╠══[+] tanggal : \x1b[1;92m%s -total : \x1b[1;93m%s"%(del_txt, len(totalcp)))
 		os.system("cat CP/%s"%(file))
-		raw_input("\n ╠══[*] \x1b[1;93mtekan enter untuk kembali ke menu ")
+                print('%s \x1b[1;92m║'%(O))
+		raw_input(" ╠══[*] \x1b[1;93mtekan enter untuk kembali ke menu ")
 		menu()
 	else:
 		menu()
@@ -385,16 +396,19 @@ def cekopsi():
 	print("")
 	for file in dirs:
 		print(" \x1b[1;92m╠══[\x1b[1;93m*\x1b[1;92m] CP/"+file)
-	print("\n \x1b[1;92m╠══[\x1b[1;93m*\x1b[1;92m] masukan file (ex: CP/%s.txt)"%(tanggal))
+        print('%s \x1b[1;92m║'%(O))
+	print(" \x1b[1;92m╠══[\x1b[1;93m*\x1b[1;92m] masukan file (ex: CP/%s.txt)"%(tanggal))
 	files = raw_input(" \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mnama file  \x1b[1;97m: \x1b[1;92m")
 	if files == "":
 		menu()
 	try:
 		buka_baju = open(files, "r").readlines()
 	except IOError:
-		exit("\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] nama file %s tidak tersedia"%(files))
+                print('%s \x1b[1;92m║'%(O))
+		exit(" \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] nama file %s tidak tersedia"%(files))
 	ubahpw()
-	print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses cek')
+        print('%s \x1b[1;92m║'%(O))
+	print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda bisa mematikan data selular untuk menjeda proses cek')
 	for memek in buka_baju:
 		kontol = memek.replace("\n","")
 		titid  = kontol.split("|")
@@ -403,13 +417,15 @@ def cekopsi():
 			cek_opsi(titid[0].replace("  [CP] ",""), titid[1])
 		except requests.exceptions.ConnectionError:
 			pass
-	print("\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mcek akun sudah selesai\x1b[1;97m...")
+        print('%s \x1b[1;92m║'%(O))
+	print(" \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mcek akun sudah selesai\x1b[1;97m...")
 	raw_input(" \x1b[1;92m╠══[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mtekan enter untuk kembali ke menu ")
 	time.sleep(1)
 	menu()
 
 def ubahpw():
-	pw=raw_input("\n \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mapakah anda ingin mengubah sandi tap yes\x1b[1;97m?\x1b[1;92m[\x1b[1;93mY\x1b[1;97m/\x1b[1;93mt\x1b[1;92m]\x1b[1;97m: \x1b[1;92m")
+        print('%s \x1b[1;92m║'%(O))
+	pw=raw_input(" \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mapakah anda ingin mengubah sandi tap yes\x1b[1;97m?\x1b[1;92m[\x1b[1;93mY\x1b[1;97m/\x1b[1;93mt\x1b[1;92m]\x1b[1;97m: \x1b[1;92m")
 	if pw == "Y" or pw == "y":
 		ubahP.append("y")
 		pw2=raw_input(" \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmasukan sandi \x1b[1;97m: \x1b[1;92m")
@@ -525,11 +541,14 @@ def cek_game(cookie):
 
 ###GANTI USER AGENT###
 def seting_yntkts():
-    print '\n ╠══%s1%s \x1b[1;93mganti user agent'%(O,N)
+    print('%s \x1b[1;92m║'%(O))
+    print ' ╠══%s1%s \x1b[1;93mganti user agent'%(O,N)
     print ' ╠══%s2%s \x1b[1;93mcheck user agent'%(O,N)
-    ytbjts = raw_input('\n %s\x1b[1;93m╠══[%s\x1b[1;92m?%s\x1b[1;92m] choose : \x1b[1;93m'%(N,O,N))
+            print('%s \x1b[1;92m║'%(O))
+    ytbjts = raw_input(' %s\x1b[1;93m╠══[%s\x1b[1;92m?%s\x1b[1;92m] choose : \x1b[1;93m'%(N,O,N))
     if ytbjts == '':
-        print '\n %s╠══[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);time.sleep(2);seting_yntkts()
+        print('%s \x1b[1;92m║'%(O))
+        print ' %s╠══[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);time.sleep(2);seting_yntkts()
     elif ytbjts in['1','01']:
         yo_ndak_tau_ko_tanya_saia()
     elif ytbjts in['2','02']:
@@ -537,37 +556,50 @@ def seting_yntkts():
             user_agent = open('YNTKTS.txt', 'r').read()
         except IOError:
             user_agent = '%s-'%(M)
-        print '\n %s╠══[%s+%s] \x1b[1;93mUser Agent anda : \x1b[1;93m%s%s'%(N,O,N,H,user_agent)
-        raw_input('\n  %s╠══[ %skembali%s ]'%(N,O,N));menu()
+        print('%s \x1b[1;92m║'%(O))
+        print ' %s╠══[%s+%s] \x1b[1;93mUser Agent anda : \x1b[1;93m%s%s'%(N,O,N,H,user_agent)
+        print('%s \x1b[1;92m║'%(O))
+        raw_input('  %s╠══[ %skembali%s ]'%(N,O,N));menu()
     else:
-        print '\n %s╠══[%s×%s] \x1b[1;93minput yang bener'%(N,M,N);time.sleep(2);seting_yntkts()
+        print('%s \x1b[1;92m║'%(O))
+        print ' %s╠══[%s×%s] \x1b[1;93minput yang bener'%(N,M,N);time.sleep(2);seting_yntkts()
 # User Agent baru
 def yo_ndak_tau_ko_tanya_saia():
     os.system('rm -rf YNTKTS.txt')
-    _asu_ = raw_input('\n ╠══[%s?%s] \x1b[1;93mingin menggunakan user agent hp anda [Y/t]: '%(O,N))
+    print('%s \x1b[1;92m║'%(O))
+    _asu_ = raw_input(' ╠══[%s?%s] \x1b[1;93mingin menggunakan user agent hp anda [Y/t]: '%(O,N))
     if _asu_ == '':
-        print '\n %s╠══[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
+        print('%s \x1b[1;92m║'%(O))
+        print ' %s╠══[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
     elif _asu_ in['Y','y']:
-        jalan('\n %s •%s \x1b[1;93m╠══Masuk Google chrome/google biasa lalu cari\n  %s•%s %sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
+        print('%s \x1b[1;92m║'%(O))
+        jalan(' %s •%s \x1b[1;93m╠══Masuk Google chrome/google biasa lalu cari\n  %s•%s %sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
         _agen_ = raw_input(' ╠══[%s?%s]\x1b[1;93m masukan user agent hp anda :%s\x1b[1;93m '%(O,N,H))
         open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
-        jalan('\n %s╠══[%s✓%s] \x1b[1;92mberhasil menggunakan user agent hp anda...'%(N,H,N))
-        raw_input('\n  %s╠══[ %skembali%s ]'%(N,O,N));menu()
+        print('%s \x1b[1;92m║'%(O))
+        jalan(' %s╠══[%s✓%s] \x1b[1;92mberhasil menggunakan user agent hp anda...'%(N,H,N))
+        print('%s \x1b[1;92m║'%(O))
+        raw_input('  %s╠══[ %skembali%s ]'%(N,O,N));menu()
     elif _asu_ in['T','t']:
         _agen_ = raw_input(' ╠══[%s?%s] \x1b[1;93mmasukan user agent :%s \x1b[1;93m'%(O,N,H))
         open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
-        jalan('\n %s╠══[%s✓%s]\x1b[1;93m berhasil mengganti user agent...'%(N,H,N))
-        raw_input('\n  %s╠══[ %skembali%s ]'%(N,O,N));menu()
+        print('%s \x1b[1;92m║'%(O))
+        jalan(' %s╠══[%s✓%s]\x1b[1;93m berhasil mengganti user agent...'%(N,H,N))
+        print('%s \x1b[1;92m║'%(O))
+        raw_input('  %s╠══[ %skembali%s ]'%(N,O,N));menu()
     else:
-        print '\n %s╠══[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
+        print('%s \x1b[1;92m║'%(O))
+        print ' %s╠══[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
 
 ####LAPORAN BUG####
 def laporbug():
-    asulo = raw_input('\n \x1b[1;92m╠══[?] masukan laporan bug script : \x1b[1;92m').replace(' ', '%20')
+    print('%s \x1b[1;92m║'%(O))
+    asulo = raw_input(' \x1b[1;92m╠══[?] masukan laporan bug script : \x1b[1;92m').replace(' ', '%20')
     if asulo == '':
         menu()
     os.system('xdg-open https://wa.me/6281272106675?text=' + asulo)
-    raw_input('\n \x1b[1;92m[*] \x1b[1;93mkembali ')
+    print('%s \x1b[1;92m║'%(O))
+    raw_input(' \x1b[1;92m[*] \x1b[1;93mkembali ')
     menu()
 
 
