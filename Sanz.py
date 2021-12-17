@@ -624,6 +624,7 @@ def sandimanual():
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mmasukan sandi minimal 6 angka\x1b[1;97m!"%(M))
         print('%s \x1b[1;92m║'%(O))
 	print(" \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]")
+        print('%s \x1b[1;92m║'%(O))
 	print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
@@ -666,6 +667,7 @@ def sandimanual():
 def sandiotomatis():
         print('%s \x1b[1;92m║'%(O))
 	print(" \x1b[1;92m╠══[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]")
+        print('%s \x1b[1;92m║'%(O))
 	print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
