@@ -573,7 +573,7 @@ def yo_ndak_tau_ko_tanya_saia():
         print ' %s╠══[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
     elif _asu_ in['Y','y']:
         print('%s \x1b[1;92m║'%(O))
-        jalan('\x1b[1;93m %s╠══%sMasuk Google chrome/google biasa lalu cari/n   %s╠══%s%sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
+        jalan('\x1b[1;93m %s╠══%sMasuk Google chrome/google biasa lalu cari\n   %s╠══%s%sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
         _agen_ = raw_input(' ╠══[%s?%s]\x1b[1;93m masukan user agent hp anda :%s\x1b[1;93m '%(O,N,H))
         open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
         print('%s \x1b[1;92m║'%(O))
