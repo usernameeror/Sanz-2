@@ -559,7 +559,7 @@ def seting_yntkts():
         print('%s \x1b[1;92m║'%(O))
         print ' %s╠══[%s+%s] \x1b[1;93mUser Agent anda : \x1b[1;93m%s%s'%(N,O,N,H,user_agent)
         print('%s \x1b[1;92m║'%(O))
-        raw_input('  %s╠══[ %skembali%s ]'%(N,O,N));menu()
+        raw_input(' %s╠══[ %skembali%s ]'%(N,O,N));menu()
     else:
         print('%s \x1b[1;92m║'%(O))
         print ' %s╠══[%s×%s] \x1b[1;93minput yang bener'%(N,M,N);time.sleep(2);seting_yntkts()
@@ -573,20 +573,20 @@ def yo_ndak_tau_ko_tanya_saia():
         print ' %s╠══[%s×%s] \x1b[1;93mGak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
     elif _asu_ in['Y','y']:
         print('%s \x1b[1;92m║'%(O))
-        jalan('\x1b[1;93m %s╠══%sMasuk Google chrome/google biasa lalu cari\n %s╠══%s%sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
+        jalan('\x1b[1;93m %s╠══%s\x1b[1;93mMasuk Google chrome/google biasa lalu cari\n %s╠══%s%sMY USER AGENT%s \x1b[1;93mlalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('')
         _agen_ = raw_input(' ╠══[%s?%s]\x1b[1;93m masukan user agent hp anda :%s\x1b[1;93m '%(O,N,H))
         open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
         print('%s \x1b[1;92m║'%(O))
         jalan(' %s╠══[%s✓%s] \x1b[1;92mberhasil menggunakan user agent hp anda...'%(N,H,N))
         print('%s \x1b[1;92m║'%(O))
-        raw_input('  %s╠══[ %skembali%s ]'%(N,O,N));menu()
+        raw_input(' %s╠══[ %skembali%s ]'%(N,O,N));menu()
     elif _asu_ in['T','t']:
         _agen_ = raw_input(' ╠══[%s?%s] \x1b[1;93mmasukan user agent :%s \x1b[1;93m'%(O,N,H))
         open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
         print('%s \x1b[1;92m║'%(O))
         jalan(' %s╠══[%s✓%s]\x1b[1;93m berhasil mengganti user agent...'%(N,H,N))
         print('%s \x1b[1;92m║'%(O))
-        raw_input('  %s╠══[ %skembali%s ]'%(N,O,N));menu()
+        raw_input(' %s╠══[ %skembali%s ]'%(N,O,N));menu()
     else:
         print('%s \x1b[1;92m║'%(O))
         print ' %s╠══[%s!%s]\x1b[1;93m [Y/t] ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
