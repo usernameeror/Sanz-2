@@ -348,7 +348,7 @@ def cekhasil():
 		dirs = os.listdir("OK")
 		print("")
 		for file in dirs:
-			print(" [*] "+file)
+			print(" ╠══[*] "+file)
 		try:
                         print('%s \x1b[1;92m║'%(O))
 			file = raw_input(" [?] mau lihat hasil yang mana ?: ")
