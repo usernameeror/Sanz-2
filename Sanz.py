@@ -172,7 +172,7 @@ def menu():
     print(" %s\x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mWhatshap   \x1b[1;93m: \x1b[1;93m0845566xxxx"%(N))
     print(" \x1b[1;92m╠══[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
     print(" \x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
-    jalan("\n \x1b[1;92m[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
+    jalan("\n \x1b[1;92m print('%s \x1b[1;92m║'%(O))[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
     print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Publik \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
     print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Massal \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
     print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Followers \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
