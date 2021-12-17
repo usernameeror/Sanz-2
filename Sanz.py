@@ -344,7 +344,7 @@ def cekhasil():
 			totalok = open("OK/%s"%(file)).read().splitlines()
 		except IOError:
 			exit(" ╠══[!] file %s tidak tersedia"%(file))
-		nm_file = ╠══("%s"%(file)).replace("-", " ")
+		nm_file = ("%s"%(file)).replace("-", " ")
 		del_txt = nm_file.replace(".txt", "")
 		print("\n *-------------------------------------------------*")
 		print(" \x1b[1;92m╠══[+] tanggal : \x1b[1;93m%s -total : \x1b[1;93m%s"%(del_txt, len(totalok)))
