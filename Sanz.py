@@ -235,7 +235,8 @@ def publik():
 			id.append(i["id"]+"<=>"+i["name"])
 	except KeyError:
 		exit(" \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93makun tidak tersedia atau list teman private")
-	print("\n \x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mtotal id  \x1b[1;93m: %s%s%s\x1b[1;92m"%(M,len(id),N)) 
+        print('%s \x1b[1;92m║'%(O))
+	print(" \x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mtotal id  \x1b[1;93m: %s%s%s\x1b[1;92m"%(M,len(id),N)) 
   
 ### DUMP MASSAL ###
 def massal():
@@ -258,7 +259,8 @@ def massal():
 				id.append(uid+"<=>"+nama)
 		except KeyError:
 			print(" ╠══[!] akun tidak tersedia atau list teman private")
-	print("\n ╠══[+] total id  : %s%s%s"%(M,len(id),N))
+        print('%s \x1b[1;92m║'%(O))
+	print(" ╠══[+] total id  : %s%s%s"%(M,len(id),N))
 	
 ### DUMP FOLLOWERS ###
 def followers():
