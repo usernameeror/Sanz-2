@@ -544,7 +544,7 @@ def seting_yntkts():
     print('%s \x1b[1;92m║'%(O))
     print ' ╠══%s1%s \x1b[1;93mganti user agent'%(O,N)
     print ' ╠══%s2%s \x1b[1;93mcheck user agent'%(O,N)
-            print('%s \x1b[1;92m║'%(O))
+    print('%s \x1b[1;92m║'%(O))
     ytbjts = raw_input(' %s\x1b[1;93m╠══[%s\x1b[1;92m?%s\x1b[1;92m] choose : \x1b[1;93m'%(N,O,N))
     if ytbjts == '':
         print('%s \x1b[1;92m║'%(O))
