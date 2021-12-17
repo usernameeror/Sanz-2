@@ -108,7 +108,7 @@ def tokenz():
 		print(" \x1b[1;92m╠══[[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mStatus     \x1b[1;93m: %s\x1b[1;91mA M P A S%s"%(H,N))    
 		print(" \x1b[1;92m╠══[[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mIP         \x1b[1;93m: %s"%(IP))       
                 print(" \x1b[1;92m╠══[[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")               
-                print(" \x1b[1;92m╠══[[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
+                print(" \x1b[1;92m[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
                 print '%s \x1b[1;92m><%s \x1b[1;93musahakan akun tumbal login di google chrome terlebih dahulu'%(B,N)
                 print '%s \x1b[1;92m><%s \x1b[1;93mjangan lupa! url ubah ke %shttps://m.facebook.com'%(B,N,H)
                 print '%s \x1b[1;92m><%s \x1b[1;93msetelah di alihkan ke google chrome. klik %stitik tiga'%(B,N,H)
