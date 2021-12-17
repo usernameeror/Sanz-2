@@ -184,7 +184,8 @@ def menu():
     print(" \x1b[1;92m╠══[\x1b[1;93m09\x1b[1;92m] \x1b[1;93mLaporkan \x1b[1;92mBug Script")
     print(" \x1b[1;92m╠══[\x1b[1;93m10\x1b[1;92m] \x1b[1;93mInfo \x1b[1;92mTools/Script")
     print(" \x1b[1;92m╠══[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;92m \x1b[1;91mHapus Token"%(M,N))
-    asw = raw_input("\n \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
+    print('%s║'%(O))
+    asw = raw_input(" \x1b[1;92m╠══[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih : \x1b[1;92m")
     if asw == "":
     	menu()
     elif asw == "1":
